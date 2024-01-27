@@ -17,7 +17,7 @@
 
 | `𝙲𝙾𝙽𝚃𝙴𝙽𝚃𝚂` |
 | ---------- |
-| [`Fundamentals of composing`]() |
+| [`Fundamentals of composing`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#fundamentals-of-composing) |
 
 </div>
 
