@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_selection
+package com.istudio.code.modules.side_effects.types
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,7 +14,10 @@ import androidx.navigation.NavHostController
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun ModuleSelectionScreen(navController: NavHostController) {
+fun SideEffect(navController: NavHostController) {
+
+
+
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -23,8 +26,8 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Demo-1", onClick = {
-            //navController.navigate(ModuleDemo.DemoSelection.rout)
+        AppButton(text = "Demo", onClick = {
+            //viewModel.sideEffectDemo()
         })
 
     }
