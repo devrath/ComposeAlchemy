@@ -39,5 +39,11 @@ fun SideEffectsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.LaunchedEffect.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Disposable Effect", onClick = {
+            navController.navigate(ModuleDemo.TypeDisposableEffect.rout)
+        })
+
     }
 }

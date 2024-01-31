@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleSelectionScreen
 import com.istudio.code.modules.side_effects.SideEffectsDemo
+import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.ui.theme.CodeTheme
@@ -54,6 +55,10 @@ class MainActivity : ComponentActivity() {
                         // Launched Effect
                         composable(ModuleDemo.LaunchedEffect.rout) {
                             TypeLaunchedEffect(navController = navController)
+                        }
+                        // Disposable Effect
+                        composable(ModuleDemo.LaunchedEffect.rout) {
+                            TypeDisposableEffect(navController = navController)
                         }
                     }
                 }
