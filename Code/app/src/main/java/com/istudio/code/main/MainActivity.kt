@@ -13,6 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleSelectionScreen
+import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
@@ -64,6 +65,10 @@ class MainActivity : ComponentActivity() {
                         // Remember Coroutine Scope
                         composable(ModuleDemo.TypeRememberCoroutineScope.rout) {
                             TypeRememberCoroutineScope(navController = navController)
+                        }
+                        // Life cycle of Compose
+                        composable(ModuleDemo.LifeCycleDemo.rout) {
+                            LifeCycleDemo(navController = navController)
                         }
                     }
                 }
