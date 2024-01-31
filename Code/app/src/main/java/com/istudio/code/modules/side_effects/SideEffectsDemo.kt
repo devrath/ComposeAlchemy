@@ -33,5 +33,11 @@ fun SideEffectsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.SideEffect.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Launched Effect", onClick = {
+            navController.navigate(ModuleDemo.LaunchedEffect.rout)
+        })
+
     }
 }
