@@ -26,6 +26,7 @@
   * [`What are composables`](https://github.com/devrath/ComposeAlchemy/wiki/What-are-composables)
   * **`State`**
     * [`What is a State`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-a-State)
+    * [`Stateful and Stateless composables`](https://github.com/devrath/ComposeAlchemy/wiki/Stateful-and-Stateless-composables)
     * [`State Management`](https://github.com/devrath/ComposeAlchemy/wiki/State-Management)
   * [`Handling Side Effects`](https://github.com/devrath/ComposeAlchemy/wiki/Handling-Side-Effects)
   * [`Life Cycle In Jetpack Compose`](https://github.com/devrath/ComposeAlchemy/wiki/Life-Cycle-In-Jetpack-Compose)
