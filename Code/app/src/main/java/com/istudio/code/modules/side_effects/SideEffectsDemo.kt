@@ -45,5 +45,11 @@ fun SideEffectsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.TypeDisposableEffect.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Remember Coroutine Scope", onClick = {
+            navController.navigate(ModuleDemo.TypeRememberCoroutineScope.rout)
+        })
+
     }
 }
