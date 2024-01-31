@@ -24,7 +24,8 @@
 ## `Fundamentals of composing`
   * [`Introduction to Jetpack compose`](https://github.com/devrath/ComposeAlchemy/wiki/Introduction-to-Jetpack-compose#what-jetpack-compose-provides)
   * [`What are composables`](https://github.com/devrath/ComposeAlchemy/wiki/What-are-composables)
-  * [`State Management`](https://github.com/devrath/ComposeAlchemy/wiki/State-Management)
+  * **`State`**
+    * [`State Management`](https://github.com/devrath/ComposeAlchemy/wiki/State-Management)
   * [`Handling Side Effects`](https://github.com/devrath/ComposeAlchemy/wiki/Handling-Side-Effects)
   * [`Life Cycle In Jetpack Compose`](https://github.com/devrath/ComposeAlchemy/wiki/Life-Cycle-In-Jetpack-Compose)
 
