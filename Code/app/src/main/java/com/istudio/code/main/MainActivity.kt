@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                             TypeLaunchedEffect(navController = navController)
                         }
                         // Disposable Effect
-                        composable(ModuleDemo.LaunchedEffect.rout) {
+                        composable(ModuleDemo.TypeDisposableEffect.rout) {
                             TypeDisposableEffect(navController = navController)
                         }
                     }
