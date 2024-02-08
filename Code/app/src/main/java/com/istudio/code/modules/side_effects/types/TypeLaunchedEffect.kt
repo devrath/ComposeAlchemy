@@ -17,18 +17,23 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.istudio.code.ui.composables.AppButton
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 @Composable
 fun TypeLaunchedEffect(navController: NavHostController) {
 
     val isLoaderDisplayed = remember { mutableStateOf(false) }
     val data = remember { mutableStateOf(listOf<String>()) }
+    val scope = rememberCoroutineScope()
+
+    println("Root composable is composed")
 
     Column(
         modifier = Modifier
@@ -38,11 +43,19 @@ fun TypeLaunchedEffect(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
     ) {
 
-        // This side effect is launched only when the boolean value is true(Initially its false)
-        LaunchedEffect(key1 = isLoaderDisplayed.value){
+        println("Column composable is composed")
 
-            // Perform a long running operation that takes time
+        // This side effect is launched only when the boolean value is true(Initially its false)
+        LaunchedEffect(key1 = Unit){
+
+            println("LaunchedEffect is invoked :--> Before fetching the data")
+            isLoaderDisplayed.value = true;
+
+            println("Before calling API")
             data.value = fetchData()
+            println("After calling API")
+
+            println("LaunchedEffect is invoked :--> After fetching the data")
 
             // Reset to false
             isLoaderDisplayed.value = false;
@@ -54,12 +67,21 @@ fun TypeLaunchedEffect(navController: NavHostController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
+
+            println("Column composable (parent of button) is composed")
+
             AppButton(text = "Fetch Data"){
-                isLoaderDisplayed.value = true
+                println("Button click invoked")
+                scope.launch {
+                    isLoaderDisplayed.value = true
+                    data.value = fetchData()
+                    isLoaderDisplayed.value = false;
+                }
             }
             if (isLoaderDisplayed.value) {
                 // Show a loading indicator
                 CircularProgressIndicator()
+                println("Loader is shown")
             } else {
                 // Show the data
                 LazyColumn {
@@ -67,6 +89,7 @@ fun TypeLaunchedEffect(navController: NavHostController) {
                         Text(text = data.value[index])
                     }
                 }
+                println("List is displayed")
             }
         }
 
@@ -78,5 +101,6 @@ fun TypeLaunchedEffect(navController: NavHostController) {
 private suspend fun fetchData(): List<String> {
     // Simulate a network delay
     delay(2000)
+    println("Inside API call")
     return listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5",)
 }
