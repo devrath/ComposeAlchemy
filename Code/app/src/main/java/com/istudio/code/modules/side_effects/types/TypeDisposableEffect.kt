@@ -23,6 +23,8 @@ fun TypeDisposableEffect(navController: NavHostController) {
 
     val timeTaken = remember{ mutableIntStateOf(0) }
 
+    println("Root composable composition occurs")
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,10 +33,15 @@ fun TypeDisposableEffect(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
     ) {
 
+        println("Column composable composition occurs")
+
         DisposableEffect(Unit) {
+
+            println("DisposableEffect scope is invoked")
+
             val scope = CoroutineScope(Dispatchers.Default)
             val job = scope.launch {
-                while (true) {
+                while (timeTaken.value<4) {
                     delay(1000)
                     timeTaken.value += 1
                     println("Timer is still working ${timeTaken.value}")
