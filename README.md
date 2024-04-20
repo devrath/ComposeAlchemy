@@ -30,8 +30,9 @@
     * [`State Management`](https://github.com/devrath/ComposeAlchemy/wiki/State-Management)
   * [`Handling Side Effects`](https://github.com/devrath/ComposeAlchemy/wiki/Handling-Side-Effects)
   * [`Life Cycle In Jetpack Compose`](https://github.com/devrath/ComposeAlchemy/wiki/Life-Cycle-In-Jetpack-Compose)
-
-
+  * **`Composition Local`**
+    * [Fundamentals](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local-:-Fundamentals)
+    * [Creating your own composition locals](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local-:-Fundamentals)  
 
 
 
