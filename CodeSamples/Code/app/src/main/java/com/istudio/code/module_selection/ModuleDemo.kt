@@ -8,5 +8,6 @@ sealed class ModuleDemo(val rout: String) {
     data object TypeDisposableEffect : ModuleDemo("TypeDisposableEffect")
     data object TypeRememberCoroutineScope : ModuleDemo("TypeRememberCoroutineScope")
     data object LifeCycleDemo : ModuleDemo("LifeCycleDemo")
+    data object SupportingMultipleScreens : ModuleDemo("SupportingMultipleScreens")
 
 }

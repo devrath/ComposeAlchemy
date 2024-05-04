@@ -27,5 +27,11 @@ fun ModuleSelectionScreen(navController: NavHostController) {
             navController.navigate(ModuleDemo.HandlingSideEffects.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Supporting Multiple Screens", onClick = {
+            navController.navigate(ModuleDemo.SupportingMultipleScreens.rout)
+        })
+
     }
 }

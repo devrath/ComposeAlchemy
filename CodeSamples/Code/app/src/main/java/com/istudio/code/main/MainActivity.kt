@@ -19,6 +19,7 @@ import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
+import com.istudio.code.modules.supporting_multiple_screens.SupportingMultipleScreensDemo
 import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -69,6 +70,10 @@ class MainActivity : ComponentActivity() {
                         // Life cycle of Compose
                         composable(ModuleDemo.LifeCycleDemo.rout) {
                             LifeCycleDemo(navController = navController)
+                        }
+                        // Supporting Multiple Screens
+                        composable(ModuleDemo.SupportingMultipleScreens.rout) {
+                            SupportingMultipleScreensDemo(navController = navController)
                         }
                     }
                 }
