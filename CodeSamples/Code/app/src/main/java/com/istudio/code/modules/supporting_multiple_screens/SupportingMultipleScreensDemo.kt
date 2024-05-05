@@ -1,5 +1,6 @@
 package com.istudio.code.modules.supporting_multiple_screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -40,36 +42,115 @@ fun SupportingMultipleScreensDemo(
 
         Column(
             modifier = Modifier
-                .fillMaxWidth(),
+                .fillMaxSize().background(Color.Magenta),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceEvenly
         ){
 
-            Row(
+            Text(
+                "display Large",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.displayLarge
+            )
 
-            ) {
-                Text(
-                    "Hello World",
-                    textAlign = TextAlign.Center
-                )
-            }
+            Text(
+                "display Medium",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.displayMedium
+            )
 
-            Row(
+            Text(
+                "display Small",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.displaySmall
+            )
 
-            ) {
-                Button({
+            Text(
+                "headline Large",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.headlineLarge
+            )
 
-                }, Modifier
-                    .fillMaxWidth()
-                    .padding(AppTheme.dimens.mediumLarge),
-                    shape = RectangleShape
-                ) {
-                    Text(
-                        text = "Action",
-                        textAlign = TextAlign.Center
-                    )
-                }
-            }
+            Text(
+                "headline Medium",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.headlineMedium
+            )
+
+            Text(
+                "headline Small",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.headlineSmall
+            )
+
+            Text(
+                "title Large",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.titleLarge
+            )
+
+            Text(
+                "title Medium",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.titleMedium
+            )
+
+            Text(
+                "title Small",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.titleSmall
+            )
+
+            Text(
+                "body Large",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.bodyLarge
+            )
+
+            Text(
+                "body Medium",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.bodyMedium
+            )
+
+            Text(
+                "body Small",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.bodySmall
+            )
+
+            Text(
+                "label Large",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.labelLarge
+            )
+
+            Text(
+                "label Medium",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.labelMedium
+            )
+
+            Text(
+                "label Small",
+                textAlign = TextAlign.Center,
+                color = Color.White,
+                style = MaterialTheme.typography.labelSmall
+            )
 
         }
 
