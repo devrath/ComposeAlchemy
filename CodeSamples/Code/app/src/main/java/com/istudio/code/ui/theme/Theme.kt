@@ -64,7 +64,7 @@ fun CodeTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = com.istudio.code.modules.supporting_multiple_screens.theme.Typography,
+        typography = Typography,
         content = content
     )
 }

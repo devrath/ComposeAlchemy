@@ -21,6 +21,7 @@ import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.modules.supporting_multiple_screens.SupportingMultipleScreensDemo
 import com.istudio.code.modules.supporting_multiple_screens.theme.CustomTheme
+import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CustomTheme {
+            CodeTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -70,10 +71,6 @@ class MainActivity : ComponentActivity() {
                         // Life cycle of Compose
                         composable(ModuleDemo.LifeCycleDemo.rout) {
                             LifeCycleDemo(navController = navController)
-                        }
-                        // Supporting Multiple Screens
-                        composable(ModuleDemo.SupportingMultipleScreens.rout) {
-                            SupportingMultipleScreensDemo(navController = navController)
                         }
                     }
                 }
