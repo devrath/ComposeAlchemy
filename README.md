@@ -33,7 +33,7 @@
   * **`Composition Local`**
     * [`Fundamentals`](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local-:-Fundamentals)
     * [`Creating your own composition locals`](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local-:-Fundamentals)  
-
+  * [`WindowSize Class - Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
 
 
 
