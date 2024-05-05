@@ -20,7 +20,7 @@ import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.modules.supporting_multiple_screens.SupportingMultipleScreensDemo
-import com.istudio.code.ui.theme.CodeTheme
+import com.istudio.code.modules.supporting_multiple_screens.theme.CustomTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CodeTheme {
+            CustomTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

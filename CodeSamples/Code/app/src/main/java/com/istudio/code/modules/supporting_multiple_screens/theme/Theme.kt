@@ -1,4 +1,4 @@
-package com.istudio.code.ui.theme
+package com.istudio.code.modules.supporting_multiple_screens.theme
 
 import android.app.Activity
 import android.os.Build
@@ -16,15 +16,15 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = com.istudio.code.modules.supporting_multiple_screens.theme.Purple80,
-    secondary = com.istudio.code.modules.supporting_multiple_screens.theme.PurpleGrey80,
-    tertiary = com.istudio.code.modules.supporting_multiple_screens.theme.Pink80
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = com.istudio.code.modules.supporting_multiple_screens.theme.Purple40,
-    secondary = com.istudio.code.modules.supporting_multiple_screens.theme.PurpleGrey40,
-    tertiary = com.istudio.code.modules.supporting_multiple_screens.theme.Pink40
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun CodeTheme(
+fun CustomTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
@@ -64,7 +64,7 @@ fun CodeTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = com.istudio.code.modules.supporting_multiple_screens.theme.Typography,
+        typography = Typography,
         content = content
     )
 }
