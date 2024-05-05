@@ -14,6 +14,8 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSize
+import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSizeClass
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -39,6 +41,7 @@ private val LightColorScheme = lightColorScheme(
 
 @Composable
 fun CustomTheme(
+    windowSizeClass: WindowSizeClass,
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
@@ -62,9 +65,63 @@ fun CustomTheme(
         }
     }
 
-    MaterialTheme(
-        colorScheme = colorScheme,
-        typography = Typography,
-        content = content
-    )
+    /** ***************** Determine the orientation *****************
+     * if(Width > Height) { LANDSCAPE } else { PORTRAIT }
+     ** ***************** Determine the orientation ***************** **/
+    val orientation = when{
+        windowSizeClass.width.size > windowSizeClass.height.size -> Orientation.Landscape
+        else -> Orientation.Portrait
+    }
+
+    /** ***************** Determine the size preference *****************
+     * if(PORTRAIT) { Width is Preference } else { Height is Preference }
+     ** ***************** Determine the size preference ***************** **/
+    val sizeThatMatters = when(orientation){
+        Orientation.Portrait -> windowSizeClass.width
+        else -> windowSizeClass.height
+    }
+
+    /** ***************** Determine the dimensions *****************
+     * Based on size determine the dimensions
+     ** ***************** Determine the dimensions ***************** **/
+    val dimensions = when(sizeThatMatters){
+        is WindowSize.Small -> smallDimensions
+        is WindowSize.Compact -> compactDimensions
+        is WindowSize.Medium -> mediumDimensions
+        else -> largeDimensions
+    }
+
+    /** ***************** Determine the dimensions *****************
+     * Based on size determine the typography
+     ** ***************** Determine the dimensions ***************** **/
+    val typography = when(sizeThatMatters){
+        is WindowSize.Small -> typographySmall
+        is WindowSize.Compact -> typographyCompact
+        is WindowSize.Medium -> typographyMedium
+        else -> typographyBig
+    }
+
+    /**
+     * We wrap material with our own app utils
+     */
+    ProvideAppUtils(dimensions = dimensions, orientation = orientation) {
+        MaterialTheme(
+            colorScheme = colorScheme,
+            typography = typography,
+            content = content
+        )
+    }
+}
+
+/**
+ * This helps us to get access to orientation and dimensions in runtime
+ */
+object AppTheme{
+    val dimens:Dimensions
+        @Composable
+        get() = LocalAppDimens.current
+
+    val orientation:Orientation
+        @Composable
+        get() = LocalOrientationMode.current
 }
