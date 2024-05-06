@@ -1,4 +1,4 @@
-package com.istudio.code.modules.app_foundations.module_selection
+package com.istudio.code.modules.app_foundations.demo_selection
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

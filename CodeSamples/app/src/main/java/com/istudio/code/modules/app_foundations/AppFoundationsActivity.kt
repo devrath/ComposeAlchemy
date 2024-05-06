@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.app_foundations.helpers.rememberWindowSizeClass
-import com.istudio.code.modules.app_foundations.module_selection.AppFoundationsSelectionScreen
+import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsSelectionScreen
 import com.istudio.code.modules.app_foundations.theme.CustomTheme
 import dagger.hilt.android.AndroidEntryPoint
 

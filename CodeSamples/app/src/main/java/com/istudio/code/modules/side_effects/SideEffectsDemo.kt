@@ -13,7 +13,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.istudio.code.module_selection.ModuleDemo
-import com.istudio.code.modules.app_foundations.module_selection.AppFoundationsDemo
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
