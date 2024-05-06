@@ -1,4 +1,4 @@
-package com.istudio.code.modules.app_foundations.demos.demo_text_unit_demo
+package com.istudio.code.modules.app_foundations.demos.text_unit_demo
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -11,11 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.istudio.code.modules.app_foundations.AppFoundationsViewModel
-import com.istudio.code.modules.app_foundations.theme.AppTheme
-import com.istudio.code.modules.app_foundations.theme.Orientation
 
 @Composable
 fun TextUnitTypeMaterialScreen(

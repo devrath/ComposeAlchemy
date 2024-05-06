@@ -8,10 +8,15 @@ sealed class AppFoundationsDemo(val rout: String) {
     data object DimensionsDemos : AppFoundationsDemo("DimensionsDemos")
     data object ColorsDemos : AppFoundationsDemo("ColorsDemos")
 
-    // <----------> COLORS
+    // <----------> TextUnit
     data object TextUnitTypeMaterialScreen : AppFoundationsDemo("TextUnitTypeMaterialScreen")
     data object TextUnitTypeCustomScreen : AppFoundationsDemo("TextUnitTypeCustomScreen")
-    // <----------> DIMENSIONS
+    // <----------> TextUnit
+
+    // <----------> Dimensions
+    data object DimensionsMaterialScreen : AppFoundationsDemo("DimensionsMaterialScreen")
+    data object DimensionsCustomScreen : AppFoundationsDemo("DimensionsCustomScreen")
+    // <----------> Dimensions
 
 
 }
