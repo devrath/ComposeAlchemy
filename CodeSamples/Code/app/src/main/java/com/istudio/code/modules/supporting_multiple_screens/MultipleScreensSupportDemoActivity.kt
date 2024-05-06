@@ -12,17 +12,16 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MultipleScreensSupportDemoActivity : ComponentActivity() {
-    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             val window = rememberWindowSizeClass()
             CustomTheme(window) {
                 val navController = rememberNavController()
-                SupportingMultipleScreensDemo(
-                    windowSizeClass = window, navController = navController
-                )
+                SupportingMultipleScreensDemo( navController = navController)
             }
         }
     }
+
 }

@@ -31,7 +31,6 @@ import com.istudio.code.ui.composables.AppButton
 
 @Composable
 fun SupportingMultipleScreensDemo(
-    windowSizeClass: WindowSizeClass,
     navController: NavHostController
 ) {
 

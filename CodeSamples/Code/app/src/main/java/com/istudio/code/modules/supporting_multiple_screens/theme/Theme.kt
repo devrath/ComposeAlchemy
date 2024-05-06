@@ -16,6 +16,19 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSize
 import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSizeClass
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomColors
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomDimensions
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomTextUnits
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.compactCustomDimensions
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.compactCustomTextUnits
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.customColorsDarkTheme
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.customColorsLightTheme
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.largeCustomDimensions
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.largeCustomTextUnits
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.mediumCustomDimensions
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.mediumCustomTextUnits
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomDimensions
+import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomTextUnits
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -85,10 +98,20 @@ fun CustomTheme(
      * Based on size determine the dimensions
      ** ***************** Determine the dimensions ***************** **/
     val dimensions = when(sizeThatMatters){
-        is WindowSize.Small -> smallDimensions
-        is WindowSize.Compact -> compactDimensions
-        is WindowSize.Medium -> mediumDimensions
-        else -> largeDimensions
+        is WindowSize.Small -> smallCustomDimensions
+        is WindowSize.Compact -> compactCustomDimensions
+        is WindowSize.Medium -> mediumCustomDimensions
+        else -> largeCustomDimensions
+    }
+
+    /** ***************** Determine the dimensions *****************
+     * Based on size determine the text-unit
+     ** ***************** Determine the dimensions ***************** **/
+    val textUnits = when(sizeThatMatters){
+        is WindowSize.Small -> smallCustomTextUnits
+        is WindowSize.Compact -> compactCustomTextUnits
+        is WindowSize.Medium -> mediumCustomTextUnits
+        else -> largeCustomTextUnits
     }
 
     /** ***************** Determine the dimensions *****************
@@ -101,10 +124,20 @@ fun CustomTheme(
         else -> typographyBig
     }
 
+    /** ***************** Determine the colors *****************
+     * Based on darkTheme flag, Determine the color palette
+     ** ***************** Determine the colors ***************** **/
+    val colors = if(darkTheme) { customColorsDarkTheme } else { customColorsLightTheme }
+
     /**
      * We wrap material with our own app utils
      */
-    ProvideAppUtils(dimensions = dimensions, orientation = orientation) {
+    ProvideAppUtils(
+        customDimensions = dimensions,
+        customTextUnits = textUnits,
+        colors = colors,
+        orientation = orientation,
+    ) {
         MaterialTheme(
             colorScheme = colorScheme,
             typography = typography,
@@ -117,11 +150,19 @@ fun CustomTheme(
  * This helps us to get access to orientation and dimensions in runtime
  */
 object AppTheme{
-    val dimens:Dimensions
+    val dimens : CustomDimensions
         @Composable
         get() = LocalAppDimens.current
 
-    val orientation:Orientation
+    val textUnits: CustomTextUnits
+        @Composable
+        get() = LocalAppTextUnits.current
+
+    val colorUnits: CustomColors
+        @Composable
+        get() = LocalColorSelection.current
+
+    val orientation : Orientation
         @Composable
         get() = LocalOrientationMode.current
 }

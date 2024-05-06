@@ -1,9 +1,9 @@
-package com.istudio.code.modules.supporting_multiple_screens.theme
+package com.istudio.code.modules.supporting_multiple_screens.theme.custom
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-data class Dimensions(
+data class CustomDimensions(
     val small:Dp,
     val smallMedium:Dp,
     val medium:Dp,
@@ -11,7 +11,7 @@ data class Dimensions(
     val large:Dp
 )
 
-val smallDimensions = Dimensions(
+val smallCustomDimensions = CustomDimensions(
     small = 2.dp,
     smallMedium = 4.dp,
     medium = 6.dp,
@@ -19,7 +19,7 @@ val smallDimensions = Dimensions(
     large = 13.dp
 )
 
-val compactDimensions = Dimensions(
+val compactCustomDimensions = CustomDimensions(
     small = 3.dp,
     smallMedium = 5.dp,
     medium = 8.dp,
@@ -27,7 +27,7 @@ val compactDimensions = Dimensions(
     large = 15.dp
 )
 
-val mediumDimensions = Dimensions(
+val mediumCustomDimensions = CustomDimensions(
     small = 5.dp,
     smallMedium = 7.dp,
     medium = 10.dp,
@@ -35,7 +35,7 @@ val mediumDimensions = Dimensions(
     large = 18.dp
 )
 
-val largeDimensions = Dimensions(
+val largeCustomDimensions = CustomDimensions(
     small = 8.dp,
     smallMedium = 11.dp,
     medium = 15.dp,
