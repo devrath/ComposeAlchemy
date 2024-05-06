@@ -12,6 +12,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsDemo
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsSelectionScreen
+import com.istudio.code.modules.app_foundations.demos.color_demo.ColorCustomScreen
 import com.istudio.code.modules.app_foundations.demos.dimensions_demo.DimensionsCustomScreen
 import com.istudio.code.modules.app_foundations.demos.dimensions_demo.selection_screen.DimensionsSelectionScreen
 import com.istudio.code.modules.app_foundations.demos.text_unit_demo.TextUnitTypeCustomScreen
@@ -71,6 +72,12 @@ class AppFoundationsActivity : ComponentActivity() {
                             DimensionsCustomScreen(navController = navController)
                         }
                         // <----------------------> Dimensions
+                        // <----------------------> Colors
+                        // Colors : Custom
+                        composable(AppFoundationsDemo.ColorsCustomScreen.rout) {
+                            ColorCustomScreen(navController = navController)
+                        }
+                        // <----------------------> Colors
 
                     }
                 }

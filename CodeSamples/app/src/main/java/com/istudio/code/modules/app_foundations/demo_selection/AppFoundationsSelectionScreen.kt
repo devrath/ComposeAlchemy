@@ -39,7 +39,7 @@ fun AppFoundationsSelectionScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
 
         AppButton(text = "Colors Demos", onClick = {
-            navController.navigate(AppFoundationsDemo.ColorsDemos.rout)
+            navController.navigate(AppFoundationsDemo.ColorsCustomScreen.rout)
         })
 
     }
