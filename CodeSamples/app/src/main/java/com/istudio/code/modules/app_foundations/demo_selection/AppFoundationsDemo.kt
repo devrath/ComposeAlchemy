@@ -14,7 +14,6 @@ sealed class AppFoundationsDemo(val rout: String) {
     // <----------> TextUnit
 
     // <----------> Dimensions
-    data object DimensionsMaterialScreen : AppFoundationsDemo("DimensionsMaterialScreen")
     data object DimensionsCustomScreen : AppFoundationsDemo("DimensionsCustomScreen")
     // <----------> Dimensions
 

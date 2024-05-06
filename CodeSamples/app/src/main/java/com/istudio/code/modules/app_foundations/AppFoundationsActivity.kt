@@ -11,14 +11,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsDemo
-import com.istudio.code.modules.app_foundations.helpers.rememberWindowSizeClass
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsSelectionScreen
 import com.istudio.code.modules.app_foundations.demos.dimensions_demo.DimensionsCustomScreen
-import com.istudio.code.modules.app_foundations.demos.dimensions_demo.DimensionsMaterialScreen
 import com.istudio.code.modules.app_foundations.demos.dimensions_demo.selection_screen.DimensionsSelectionScreen
 import com.istudio.code.modules.app_foundations.demos.text_unit_demo.TextUnitTypeCustomScreen
 import com.istudio.code.modules.app_foundations.demos.text_unit_demo.TextUnitTypeMaterialScreen
 import com.istudio.code.modules.app_foundations.demos.text_unit_demo.selection_screen.TextUnitSelectionScreen
+import com.istudio.code.modules.app_foundations.helpers.rememberWindowSizeClass
 import com.istudio.code.modules.app_foundations.theme.CustomTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -66,10 +65,6 @@ class AppFoundationsActivity : ComponentActivity() {
                         // Dimensions: SELECTION-SCREEN
                         composable(AppFoundationsDemo.DimensionsDemos.rout) {
                             DimensionsSelectionScreen(navController = navController)
-                        }
-                        // Dimensions : Material
-                        composable(AppFoundationsDemo.DimensionsMaterialScreen.rout) {
-                            DimensionsMaterialScreen(navController = navController)
                         }
                         // Dimensions : Custom
                         composable(AppFoundationsDemo.DimensionsCustomScreen.rout) {

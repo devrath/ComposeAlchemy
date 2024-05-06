@@ -27,12 +27,6 @@ fun DimensionsSelectionScreen(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Dimensions Material", onClick = {
-            navController.navigate(AppFoundationsDemo.DimensionsMaterialScreen.rout)
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
         AppButton(text = "Dimensions Custom", onClick = {
             navController.navigate(AppFoundationsDemo.DimensionsCustomScreen.rout)
         })
