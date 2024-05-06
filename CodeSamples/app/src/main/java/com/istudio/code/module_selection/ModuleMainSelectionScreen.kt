@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.istudio.code.modules.app_foundations.MultipleScreensSupportDemoActivity
+import com.istudio.code.modules.app_foundations.AppFoundationsActivity
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
@@ -34,9 +34,9 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Supporting Multiple Screens", onClick = {
+        AppButton(text = "App Foundations", onClick = {
             //navController.navigate(ModuleDemo.SupportingMultipleScreens.rout)
-            context.startActivity(Intent(context, MultipleScreensSupportDemoActivity::class.java))
+            context.startActivity(Intent(context, AppFoundationsActivity::class.java))
         })
 
     }

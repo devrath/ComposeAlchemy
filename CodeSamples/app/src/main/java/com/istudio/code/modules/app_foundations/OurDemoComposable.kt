@@ -21,7 +21,7 @@ fun SupportingMultipleScreensDemo(
     navController: NavHostController
 ) {
 
-    val viewModel: SupportingMultipleScreensViewModel = hiltViewModel()
+    val viewModel: AppFoundationsViewModel = hiltViewModel()
 
     if(AppTheme.orientation == Orientation.Portrait){
         // <------------- PORTRAIT MODE ------------->

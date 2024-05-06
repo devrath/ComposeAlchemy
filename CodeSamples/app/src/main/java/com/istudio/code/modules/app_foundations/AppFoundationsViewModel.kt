@@ -5,7 +5,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class SupportingMultipleScreensViewModel @Inject constructor( ) : ViewModel() {
+class AppFoundationsViewModel @Inject constructor( ) : ViewModel() {
 
 
 
