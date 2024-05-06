@@ -21,29 +21,47 @@ import com.istudio.code.modules.app_foundations.theme.Orientation
 fun TextUnitTypeCustomScreen(
     navController: NavHostController
 ) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize().background(Color.Blue),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly
+    ){
 
+        Text(
+            "Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            fontSize = AppTheme.textUnits.large
+        )
 
-    if(AppTheme.orientation == Orientation.Portrait){
-        // <------------- PORTRAIT MODE ------------->
+        Text(
+            "Medium Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            fontSize = AppTheme.textUnits.mediumLarge
+        )
 
-        Column(
-            modifier = Modifier
-                .fillMaxSize().background(Color.Magenta),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceEvenly
-        ){
+        Text(
+            "Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            fontSize = AppTheme.textUnits.medium
+        )
 
-            Text(
-                "Hello",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.displayLarge
-            )
+        Text(
+            "Small Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            fontSize = AppTheme.textUnits.smallMedium
+        )
 
-        }
-
-    } else {
-        // <------------- LANDSCAPE MODE ------------>
+        Text(
+            "Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            fontSize = AppTheme.textUnits.small
+        )
 
     }
 }

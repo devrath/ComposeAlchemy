@@ -22,125 +22,117 @@ fun TextUnitTypeMaterialScreen(
     navController: NavHostController
 ) {
 
-    if(AppTheme.orientation == Orientation.Portrait){
-        // <------------- PORTRAIT MODE ------------->
+    Column(
+        modifier = Modifier
+            .fillMaxSize().background(Color.Blue),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly
+    ){
 
-        Column(
-            modifier = Modifier
-                .fillMaxSize().background(Color.Magenta),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceEvenly
-        ){
+        Text(
+            "display Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.displayLarge
+        )
 
-            Text(
-                "display Large",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.displayLarge
-            )
+        Text(
+            "display Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.displayMedium
+        )
 
-            Text(
-                "display Medium",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.displayMedium
-            )
+        Text(
+            "display Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.displaySmall
+        )
 
-            Text(
-                "display Small",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.displaySmall
-            )
+        Text(
+            "headline Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.headlineLarge
+        )
 
-            Text(
-                "headline Large",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.headlineLarge
-            )
+        Text(
+            "headline Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.headlineMedium
+        )
 
-            Text(
-                "headline Medium",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.headlineMedium
-            )
+        Text(
+            "headline Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.headlineSmall
+        )
 
-            Text(
-                "headline Small",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.headlineSmall
-            )
+        Text(
+            "title Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.titleLarge
+        )
 
-            Text(
-                "title Large",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.titleLarge
-            )
+        Text(
+            "title Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.titleMedium
+        )
 
-            Text(
-                "title Medium",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.titleMedium
-            )
+        Text(
+            "title Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.titleSmall
+        )
 
-            Text(
-                "title Small",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.titleSmall
-            )
+        Text(
+            "body Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.bodyLarge
+        )
 
-            Text(
-                "body Large",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.bodyLarge
-            )
+        Text(
+            "body Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.bodyMedium
+        )
 
-            Text(
-                "body Medium",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.bodyMedium
-            )
+        Text(
+            "body Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.bodySmall
+        )
 
-            Text(
-                "body Small",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.bodySmall
-            )
+        Text(
+            "label Large",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.labelLarge
+        )
 
-            Text(
-                "label Large",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.labelLarge
-            )
+        Text(
+            "label Medium",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.labelMedium
+        )
 
-            Text(
-                "label Medium",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.labelMedium
-            )
-
-            Text(
-                "label Small",
-                textAlign = TextAlign.Center,
-                color = Color.White,
-                style = MaterialTheme.typography.labelSmall
-            )
-
-        }
-
-    } else {
-        // <------------- LANDSCAPE MODE ------------>
+        Text(
+            "label Small",
+            textAlign = TextAlign.Center,
+            color = Color.White,
+            style = MaterialTheme.typography.labelSmall
+        )
 
     }
 }
