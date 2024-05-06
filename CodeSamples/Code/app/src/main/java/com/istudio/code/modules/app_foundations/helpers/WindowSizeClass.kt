@@ -1,9 +1,8 @@
-package com.istudio.code.modules.supporting_multiple_screens.helpers
+package com.istudio.code.modules.app_foundations.helpers
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalConfiguration
 

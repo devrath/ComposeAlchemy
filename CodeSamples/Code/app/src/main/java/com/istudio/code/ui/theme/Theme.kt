@@ -16,15 +16,15 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = com.istudio.code.modules.supporting_multiple_screens.theme.Purple80,
-    secondary = com.istudio.code.modules.supporting_multiple_screens.theme.PurpleGrey80,
-    tertiary = com.istudio.code.modules.supporting_multiple_screens.theme.Pink80
+    primary = com.istudio.code.modules.app_foundations.theme.Purple80,
+    secondary = com.istudio.code.modules.app_foundations.theme.PurpleGrey80,
+    tertiary = com.istudio.code.modules.app_foundations.theme.Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = com.istudio.code.modules.supporting_multiple_screens.theme.Purple40,
-    secondary = com.istudio.code.modules.supporting_multiple_screens.theme.PurpleGrey40,
-    tertiary = com.istudio.code.modules.supporting_multiple_screens.theme.Pink40
+    primary = com.istudio.code.modules.app_foundations.theme.Purple40,
+    secondary = com.istudio.code.modules.app_foundations.theme.PurpleGrey40,
+    tertiary = com.istudio.code.modules.app_foundations.theme.Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),

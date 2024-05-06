@@ -1,15 +1,15 @@
-package com.istudio.code.modules.supporting_multiple_screens.theme
+package com.istudio.code.modules.app_foundations.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.remember
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomColors
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomTextUnits
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.customColorsLightTheme
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.CustomColors
+import com.istudio.code.modules.app_foundations.theme.custom.CustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.CustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.customColorsLightTheme
+import com.istudio.code.modules.app_foundations.theme.custom.smallCustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.smallCustomTextUnits
 
 /**
  * This take dimensions, orientation and content

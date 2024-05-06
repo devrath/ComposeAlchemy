@@ -12,15 +12,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
-import com.istudio.code.module_selection.ModuleSelectionScreen
+import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
-import com.istudio.code.modules.supporting_multiple_screens.SupportingMultipleScreensDemo
-import com.istudio.code.modules.supporting_multiple_screens.theme.CustomTheme
 import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -46,7 +44,7 @@ class MainActivity : ComponentActivity() {
                     ) {
                         // Selection Screen
                         composable(ModuleDemo.DemoSelection.rout) {
-                            ModuleSelectionScreen(navController = navController)
+                            ModuleMainSelectionScreen(navController = navController)
                         }
                         // Side Effect - Selection
                         composable(ModuleDemo.HandlingSideEffects.rout) {

@@ -1,4 +1,4 @@
-package com.istudio.code.modules.supporting_multiple_screens.theme.custom
+package com.istudio.code.modules.app_foundations.theme.custom
 
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp

@@ -1,4 +1,4 @@
-package com.istudio.code.modules.supporting_multiple_screens.theme
+package com.istudio.code.modules.app_foundations.theme
 
 import android.app.Activity
 import android.os.Build
@@ -14,21 +14,21 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSize
-import com.istudio.code.modules.supporting_multiple_screens.helpers.WindowSizeClass
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomColors
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.CustomTextUnits
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.compactCustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.compactCustomTextUnits
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.customColorsDarkTheme
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.customColorsLightTheme
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.largeCustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.largeCustomTextUnits
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.mediumCustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.mediumCustomTextUnits
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomDimensions
-import com.istudio.code.modules.supporting_multiple_screens.theme.custom.smallCustomTextUnits
+import com.istudio.code.modules.app_foundations.helpers.WindowSize
+import com.istudio.code.modules.app_foundations.helpers.WindowSizeClass
+import com.istudio.code.modules.app_foundations.theme.custom.CustomColors
+import com.istudio.code.modules.app_foundations.theme.custom.CustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.CustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.compactCustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.compactCustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.customColorsDarkTheme
+import com.istudio.code.modules.app_foundations.theme.custom.customColorsLightTheme
+import com.istudio.code.modules.app_foundations.theme.custom.largeCustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.largeCustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.mediumCustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.mediumCustomTextUnits
+import com.istudio.code.modules.app_foundations.theme.custom.smallCustomDimensions
+import com.istudio.code.modules.app_foundations.theme.custom.smallCustomTextUnits
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,

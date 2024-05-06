@@ -1,4 +1,4 @@
-package com.istudio.code.module_selection
+package com.istudio.code.modules.app_foundations.module_selection
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.istudio.code.modules.supporting_multiple_screens.MultipleScreensSupportDemoActivity
+import com.istudio.code.modules.app_foundations.MultipleScreensSupportDemoActivity
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
@@ -28,15 +28,20 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Handling Side Effects", onClick = {
-            navController.navigate(ModuleDemo.HandlingSideEffects.rout)
+        AppButton(text = "Text Unit Demos", onClick = {
+            navController.navigate(AppFoundationsDemo.TextUnitDemos.rout)
         })
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Supporting Multiple Screens", onClick = {
-            //navController.navigate(ModuleDemo.SupportingMultipleScreens.rout)
-            context.startActivity(Intent(context, MultipleScreensSupportDemoActivity::class.java))
+        AppButton(text = "Dimensions Demos", onClick = {
+            navController.navigate(AppFoundationsDemo.DimensionsDemos.rout)
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Colors Demos", onClick = {
+            navController.navigate(AppFoundationsDemo.ColorsDemos.rout)
         })
 
     }

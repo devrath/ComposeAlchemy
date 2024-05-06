@@ -1,4 +1,4 @@
-package com.istudio.code.modules.supporting_multiple_screens.theme
+package com.istudio.code.modules.app_foundations.theme
 
 import androidx.compose.ui.graphics.Color
 
