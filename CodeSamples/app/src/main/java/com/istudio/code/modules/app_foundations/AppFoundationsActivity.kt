@@ -15,6 +15,9 @@ import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsDemo
 import com.istudio.code.modules.app_foundations.helpers.rememberWindowSizeClass
 import com.istudio.code.modules.app_foundations.demo_selection.AppFoundationsSelectionScreen
+import com.istudio.code.modules.app_foundations.demos.demo_text_unit_demo.TextUnitTypeCustomScreen
+import com.istudio.code.modules.app_foundations.demos.demo_text_unit_demo.TextUnitTypeMaterialScreen
+import com.istudio.code.modules.app_foundations.demos.demo_text_unit_demo.selection_screen.TextUnitSelectionScreen
 import com.istudio.code.modules.app_foundations.theme.CustomTheme
 import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -45,6 +48,20 @@ class AppFoundationsActivity : ComponentActivity() {
                         composable(AppFoundationsDemo.MainSelection.rout) {
                             AppFoundationsSelectionScreen(navController = navController)
                         }
+                        // <----------------------> Type Scale
+                        // Type Scale : SELECTION-SCREEN
+                        composable(AppFoundationsDemo.TextUnitDemos.rout) {
+                            TextUnitSelectionScreen(navController = navController)
+                        }
+                        // Type Scale : Material
+                        composable(AppFoundationsDemo.TextUnitTypeMaterialScreen.rout) {
+                            TextUnitTypeMaterialScreen(navController = navController)
+                        }
+                        // Type Scale : Custom
+                        composable(AppFoundationsDemo.TextUnitTypeCustomScreen.rout) {
+                            TextUnitTypeCustomScreen(navController = navController)
+                        }
+                        // <----------------------> Type Scale
                     }
                 }
             }

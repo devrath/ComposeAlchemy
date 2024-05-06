@@ -10,5 +10,8 @@ sealed class AppFoundationsDemo(val rout: String) {
 
     // <----------> COLORS
     data object TextUnitTypeMaterialScreen : AppFoundationsDemo("TextUnitTypeMaterialScreen")
+    data object TextUnitTypeCustomScreen : AppFoundationsDemo("TextUnitTypeCustomScreen")
+    // <----------> DIMENSIONS
+
 
 }

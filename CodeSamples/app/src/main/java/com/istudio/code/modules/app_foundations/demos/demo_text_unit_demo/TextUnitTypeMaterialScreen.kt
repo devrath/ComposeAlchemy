@@ -22,8 +22,6 @@ fun TextUnitTypeMaterialScreen(
     navController: NavHostController
 ) {
 
-    val viewModel: AppFoundationsViewModel = hiltViewModel()
-
     if(AppTheme.orientation == Orientation.Portrait){
         // <------------- PORTRAIT MODE ------------->
 
