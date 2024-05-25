@@ -34,6 +34,12 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+        AppButton(text = "Pagination", onClick = {
+            navController.navigate(ModuleDemo.PaginationDemo.rout)
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
         AppButton(text = "App Foundations", onClick = {
             //navController.navigate(ModuleDemo.SupportingMultipleScreens.rout)
             context.startActivity(Intent(context, AppFoundationsActivity::class.java))

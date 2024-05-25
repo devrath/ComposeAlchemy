@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
+import com.istudio.code.modules.pagination.PaginationDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
@@ -69,6 +70,10 @@ class MainActivity : ComponentActivity() {
                         // Life cycle of Compose
                         composable(ModuleDemo.LifeCycleDemo.rout) {
                             LifeCycleDemo(navController = navController)
+                        }
+                        // Pagination Demo
+                        composable(ModuleDemo.PaginationDemo.rout) {
+                            PaginationDemo(navController = navController)
                         }
                     }
                 }

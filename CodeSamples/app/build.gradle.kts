@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
     kotlin("kapt")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -49,16 +50,12 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    // Allow references to generated code
-    kapt {
-        correctErrorTypes = true
-    }
 }
 
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation(platform("androidx.compose:compose-bom:2024.05.00"))
     implementation("androidx.compose.ui:ui")
@@ -81,13 +78,15 @@ dependencies {
     // Navigation
     implementation ("androidx.navigation:navigation-compose:2.7.7")
     // Lifecycle
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3")
     // Joda Time
     implementation("joda-time:joda-time:2.10.13")
     // Open CSV reader
@@ -96,4 +95,16 @@ dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
     // Window size class
     implementation("androidx.compose.material3:material3-window-size-class")
+    // Coil Compose
+    implementation("io.coil-kt:coil-compose:2.5.0")
+    // Life cycle
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+    // Paging
+    implementation("androidx.paging:paging-runtime-ktx:3.3.0")
+    implementation("androidx.paging:paging-compose:3.3.0")
+    // Room
+    implementation("androidx.room:room-ktx:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-paging:2.6.1")
 }
