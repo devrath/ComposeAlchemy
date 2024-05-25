@@ -1,14 +1,14 @@
-package com.istudio.code.modules.pagination.di
+package com.istudio.code.modules.pagination.sample_beer_list.di
 
 import android.content.Context
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.room.Room
-import com.istudio.code.modules.pagination.data.local.BeerDatabase
-import com.istudio.code.modules.pagination.data.local.BeerEntity
-import com.istudio.code.modules.pagination.data.remote.BeerApi
-import com.istudio.code.modules.pagination.data.remote.BeerRemoteMediator
+import com.istudio.code.modules.pagination.sample_beer_list.data.local.BeerDatabase
+import com.istudio.code.modules.pagination.sample_beer_list.data.local.BeerEntity
+import com.istudio.code.modules.pagination.sample_beer_list.data.remote.BeerApi
+import com.istudio.code.modules.pagination.sample_beer_list.data.remote.BeerRemoteMediator
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

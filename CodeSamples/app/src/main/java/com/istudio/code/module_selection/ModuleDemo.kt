@@ -10,5 +10,7 @@ sealed class ModuleDemo(val rout: String) {
     data object LifeCycleDemo : ModuleDemo("LifeCycleDemo")
     data object SupportingMultipleScreens : ModuleDemo("SupportingMultipleScreens")
 
+    data object PaginationSelection : ModuleDemo("PaginationSelection")
     data object PaginationDemo : ModuleDemo("PaginationDemo")
+    data object QuotesDemo : ModuleDemo("QuotesDemo")
 }

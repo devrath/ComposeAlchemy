@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.domain
+package com.istudio.code.modules.pagination.sample_beer_list.domain
 
 data class Beer(
     val id: Int,

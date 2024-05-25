@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.data.local
+package com.istudio.code.modules.pagination.sample_beer_list.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

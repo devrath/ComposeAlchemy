@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination
+package com.istudio.code.modules.pagination.sample_beer_list
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -21,7 +21,7 @@ import androidx.navigation.NavHostController
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.istudio.code.modules.pagination.domain.Beer
+import com.istudio.code.modules.pagination.sample_beer_list.domain.Beer
 
 @Composable
 fun PaginationDemo(navController: NavHostController) {

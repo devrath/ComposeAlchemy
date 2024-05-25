@@ -1,8 +1,8 @@
-package com.istudio.code.modules.pagination.data.mappers
+package com.istudio.code.modules.pagination.sample_beer_list.data.mappers
 
-import com.istudio.code.modules.pagination.data.local.BeerEntity
-import com.istudio.code.modules.pagination.data.remote.BeerDto
-import com.istudio.code.modules.pagination.domain.Beer
+import com.istudio.code.modules.pagination.sample_beer_list.data.local.BeerEntity
+import com.istudio.code.modules.pagination.sample_beer_list.data.remote.BeerDto
+import com.istudio.code.modules.pagination.sample_beer_list.domain.Beer
 
 fun BeerDto.toBeerEntity(): BeerEntity {
     return BeerEntity(

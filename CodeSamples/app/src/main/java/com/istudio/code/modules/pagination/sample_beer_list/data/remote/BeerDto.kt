@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.data.remote
+package com.istudio.code.modules.pagination.sample_beer_list.data.remote
 
 data class BeerDto(
     val id: Int,

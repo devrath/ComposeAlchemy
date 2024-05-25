@@ -1,13 +1,13 @@
-package com.istudio.code.modules.pagination.data.remote
+package com.istudio.code.modules.pagination.sample_beer_list.data.remote
 
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
-import com.istudio.code.modules.pagination.data.local.BeerDatabase
-import com.istudio.code.modules.pagination.data.local.BeerEntity
-import com.istudio.code.modules.pagination.data.mappers.toBeerEntity
+import com.istudio.code.modules.pagination.sample_beer_list.data.local.BeerDatabase
+import com.istudio.code.modules.pagination.sample_beer_list.data.local.BeerEntity
+import com.istudio.code.modules.pagination.sample_beer_list.data.mappers.toBeerEntity
 import retrofit2.HttpException
 import java.io.IOException
 

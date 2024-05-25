@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination
+package com.istudio.code.modules.pagination.sample_beer_list
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.istudio.code.modules.pagination.domain.Beer
+import com.istudio.code.modules.pagination.sample_beer_list.domain.Beer
 import com.istudio.code.ui.theme.CodeTheme
 
 @Composable

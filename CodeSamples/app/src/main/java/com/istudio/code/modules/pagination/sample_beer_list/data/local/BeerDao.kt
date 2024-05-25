@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.data.local
+package com.istudio.code.modules.pagination.sample_beer_list.data.local
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
