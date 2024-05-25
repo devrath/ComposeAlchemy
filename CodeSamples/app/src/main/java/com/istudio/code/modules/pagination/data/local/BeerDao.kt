@@ -11,6 +11,12 @@ interface BeerDao {
     @Upsert
     suspend fun upsertAll(beers: List<BeerEntity>)
 
+    /**
+     * PagingSource that returns a list of beers.
+     * * It accepts <Int,BeerEntity>
+     * * Int is the page number
+     * * BeerEntity is the item type that you return in each page(Each page consists of bunch of beer entities)
+     */
     @Query("SELECT * FROM beerentity")
     fun pagingSource(): PagingSource<Int, BeerEntity>
 
