@@ -36,7 +36,7 @@
   * **`App Foundations`**
     * [`Material-3 Design kit and research`](https://github.com/devrath/Material-3-Design-Kit)
     * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
-   * **`Pagination`**
+  * **`Pagination`**
     * [`Learnings`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Learnings)
 
 
