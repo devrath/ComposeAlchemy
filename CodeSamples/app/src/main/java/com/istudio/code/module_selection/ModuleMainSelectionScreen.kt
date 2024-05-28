@@ -34,8 +34,8 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Pagination Selection", onClick = {
-            navController.navigate(ModuleDemo.PaginationSelection.rout)
+        AppButton(text = "Pagination Demo", onClick = {
+            navController.navigate(ModuleDemo.QuotesDemo.rout)
         })
 
         Spacer(modifier = Modifier.height(16.dp))
