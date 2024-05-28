@@ -14,7 +14,6 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
-import com.istudio.code.modules.pagination.PaginationSelection
 import com.istudio.code.modules.pagination.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
