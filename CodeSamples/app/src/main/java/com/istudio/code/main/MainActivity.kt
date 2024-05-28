@@ -16,7 +16,7 @@ import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.pagination.PaginationSelection
 import com.istudio.code.modules.pagination.sample_beer_list.PaginationDemo
-import com.istudio.code.modules.pagination.sample_new.QuotesDemo
+import com.istudio.code.modules.pagination.quotes_list.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect

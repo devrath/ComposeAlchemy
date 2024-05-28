@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.sample_new
+package com.istudio.code.modules.pagination.quotes_list
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import androidx.paging.compose.collectAsLazyPagingItems
 
 @Composable
 fun QuotesDemo(navController: NavHostController) {

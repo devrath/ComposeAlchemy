@@ -1,4 +1,4 @@
-package com.istudio.code.modules.pagination.sample_new
+package com.istudio.code.modules.pagination.quotes_list
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
