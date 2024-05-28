@@ -6,7 +6,6 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.istudio.code.modules.pagination.db.database.QuoteDatabase
 import com.istudio.code.modules.pagination.models.Result
-import com.istudio.code.modules.pagination.paging.QuotePagingSource
 import com.istudio.code.modules.pagination.paging.QuoteRemoteMediator
 import com.istudio.code.modules.pagination.retrofit.QuoteAPI
 import kotlinx.coroutines.flow.Flow
