@@ -38,6 +38,7 @@
     * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
+    * [`Pagination: With remote API and DB combined`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-With-remote-API-and-DB-combined)
     * [`Learnings`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Learnings)
 
 
