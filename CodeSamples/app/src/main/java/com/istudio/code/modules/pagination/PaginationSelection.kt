@@ -26,14 +26,6 @@ fun PaginationSelection(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
     ) {
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Beer List", onClick = {
-            navController.navigate(ModuleDemo.PaginationDemo.rout)
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
         AppButton(text = "Quotes List", onClick = {
             navController.navigate(ModuleDemo.QuotesDemo.rout)
         })

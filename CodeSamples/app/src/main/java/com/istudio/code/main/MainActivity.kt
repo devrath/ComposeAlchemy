@@ -15,7 +15,6 @@ import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.pagination.PaginationSelection
-import com.istudio.code.modules.pagination.sample_beer_list.PaginationDemo
 import com.istudio.code.modules.pagination.quotes_list.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
@@ -76,10 +75,6 @@ class MainActivity : ComponentActivity() {
                         // Selection: Pagination screen
                         composable(ModuleDemo.PaginationSelection.rout) {
                             PaginationSelection(navController = navController)
-                        }
-                        // Pagination Demo
-                        composable(ModuleDemo.PaginationDemo.rout) {
-                            PaginationDemo(navController = navController)
                         }
                         // Quotes Demo
                         composable(ModuleDemo.QuotesDemo.rout) {
