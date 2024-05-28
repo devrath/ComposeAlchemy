@@ -1,6 +1,6 @@
 package com.istudio.code.modules.pagination.models
 
-data class QuoteList(
+data class QuoteResult(
     val count: Int,
     val lastItemIndex: Int,
     val page: Int,

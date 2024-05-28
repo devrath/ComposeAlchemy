@@ -1,6 +1,12 @@
 package com.istudio.code.modules.pagination.models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+
+@Entity(tableName = "Quote")
 data class Result(
+    @PrimaryKey(autoGenerate = false)
     val _id: String,
     val author: String,
     val authorSlug: String,
@@ -8,5 +14,4 @@ data class Result(
     val dateAdded: String,
     val dateModified: String,
     val length: Int,
-    val tags: List<String>
 )
