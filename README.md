@@ -43,8 +43,8 @@
     * [`Pagination: With remote API`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-With-remote-API)
     * [`Pagination: With remote API and DB combined`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-With-remote-API-and-DB-combined)
     * [`Learnings`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Learnings)
-  * **`Compose Snapshot testing`**
-    * [`What is snapshot testing`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-snapshot-testing) 
+  * **`Compose screenshot testing`**
+    * [`What is screenshot testing`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-screenshot-testing) 
 
 
 
