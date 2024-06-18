@@ -30,18 +30,21 @@
     * [`State Management`](https://github.com/devrath/ComposeAlchemy/wiki/State-Management)
   * [`Handling Side Effects`](https://github.com/devrath/ComposeAlchemy/wiki/Handling-Side-Effects)
   * [`Life Cycle In Jetpack Compose`](https://github.com/devrath/ComposeAlchemy/wiki/Life-Cycle-In-Jetpack-Compose)
+## `Compose building blocks`
   * **`Composition Local`**
     * [`Fundamentals`](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local-:-Fundamentals)
     * [`Creating your own composition locals`](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local:-Creating-your-own-composition-locals)  
   * **`App Foundations`**
     * [`Material-3 Design kit and research`](https://github.com/devrath/Material-3-Design-Kit)
     * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
+## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
     * [`Pagination: With remote API`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-With-remote-API)
     * [`Pagination: With remote API and DB combined`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-With-remote-API-and-DB-combined)
     * [`Learnings`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Learnings)
-
+  * **`Compose Snapshot testing`**
+    * [`What is snapshot testing`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-snapshot-testing) 
 
 
 
