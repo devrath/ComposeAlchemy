@@ -18,7 +18,7 @@ class QuoteRepository @Inject constructor(
 ) {
     fun getQuotes(): Flow<PagingData<Result>> = Pager(
         config = PagingConfig(
-            pageSize = 20, maxSize = 100
+            pageSize = 10, maxSize = 100
         ),
         remoteMediator = QuoteRemoteMediator(quoteAPI, quoteDatabase),
         pagingSourceFactory = { quoteDatabase.quoteDao().getQuotes() }
