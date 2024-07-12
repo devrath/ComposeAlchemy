@@ -49,7 +49,7 @@
     * [`What is screenshot testing`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-screenshot-testing) 
 ## `Interoperability API's`
   * **`Using XML in Compose`**
-    * [`Using VIEW-BINDING in the compose`]()
+    * [`Using VIEW-BINDING in the compose`](https://github.com/devrath/ComposeAlchemy/wiki/Interoperability:-Using-VIEW%E2%80%90BINDING-in-the-compose)
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
