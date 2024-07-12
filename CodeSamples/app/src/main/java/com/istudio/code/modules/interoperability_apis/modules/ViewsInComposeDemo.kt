@@ -1,6 +1,7 @@
 package com.istudio.code.modules.interoperability_apis.modules
 
 import android.content.Intent
+import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,11 +15,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.viewinterop.AndroidViewBinding
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.paging.compose.collectAsLazyPagingItems
+import com.istudio.code.databinding.SimpleViewOneBinding
+import com.istudio.code.databinding.SimpleViewOneBinding.inflate
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.modules.app_foundations.AppFoundationsActivity
 import com.istudio.code.modules.pagination.models.Result
@@ -35,6 +40,16 @@ fun ViewsInComposeDemo(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
+
+        val context = LocalContext.current
+
+        // Using the xml with view binding in compose
+        AndroidViewBinding(SimpleViewOneBinding::inflate) {
+            demoButtonId.setOnClickListener {
+                Toast.makeText(context,"Button Clicked!",Toast.LENGTH_LONG).show()
+            }
+        }
+
 
 
     }
