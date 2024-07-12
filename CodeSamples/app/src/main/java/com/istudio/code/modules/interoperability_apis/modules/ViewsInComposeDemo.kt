@@ -40,18 +40,13 @@ fun ViewsInComposeDemo(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-
         val context = LocalContext.current
-
         // Using the xml with view binding in compose
         AndroidViewBinding(SimpleViewOneBinding::inflate) {
             demoButtonId.setOnClickListener {
                 Toast.makeText(context,"Button Clicked!",Toast.LENGTH_LONG).show()
             }
         }
-
-
-
     }
 
 }
