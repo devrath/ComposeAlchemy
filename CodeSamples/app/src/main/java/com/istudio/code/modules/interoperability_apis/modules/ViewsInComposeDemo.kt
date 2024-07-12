@@ -1,4 +1,4 @@
-package com.istudio.code.modules.interoperability_apis
+package com.istudio.code.modules.interoperability_apis.modules
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
@@ -26,9 +26,7 @@ import com.istudio.code.ui.composables.AppButton
 
 
 @Composable
-fun InteroperabilityApisDemo(navController: NavHostController) {
-
-    val viewModel: InteroperabilityApisDemoViewModel = hiltViewModel()
+fun ViewsInComposeDemo(navController: NavHostController) {
 
     Column(
         modifier = Modifier
@@ -38,9 +36,6 @@ fun InteroperabilityApisDemo(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
     ) {
 
-        AppButton(text = "Using views in compose", onClick = {
-            navController.navigate(ModuleDemo.ViewsInCompose.rout)
-        })
 
     }
 

@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.interoperability_apis.InteroperabilityApisDemo
+import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.pagination.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
@@ -79,6 +80,10 @@ class MainActivity : ComponentActivity() {
                         // Interoperability Demo
                         composable(ModuleDemo.InteroperabilityApis.rout) {
                             InteroperabilityApisDemo(navController = navController)
+                        }
+                        // Views in Compose Demo
+                        composable(ModuleDemo.ViewsInCompose.rout) {
+                            ViewsInComposeDemo(navController = navController)
                         }
                     }
                 }
