@@ -45,5 +45,11 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
             context.startActivity(Intent(context, AppFoundationsActivity::class.java))
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Interoperability AP's", onClick = {
+            navController.navigate(ModuleDemo.InteroperabilityApis.rout)
+        })
+
     }
 }
