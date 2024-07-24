@@ -22,6 +22,8 @@ import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
+import com.istudio.code.modules.ui_demos.UiDemo
+import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
 import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -84,6 +86,14 @@ class MainActivity : ComponentActivity() {
                         // Views in Compose Demo
                         composable(ModuleDemo.ViewsInCompose.rout) {
                             ViewsInComposeDemo(navController = navController)
+                        }
+                        // UI in Demo
+                        composable(ModuleDemo.UiDemo.rout) {
+                            UiDemo(navController = navController)
+                        }
+                        // Toolbar menu drop down
+                        composable(ModuleDemo.ToolbarMenuDropDown.rout) {
+                            ToolbarMenuDropDownDemo(navController = navController)
                         }
                     }
                 }

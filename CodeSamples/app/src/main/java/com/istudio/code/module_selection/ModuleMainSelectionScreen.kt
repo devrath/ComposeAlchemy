@@ -51,5 +51,10 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
             navController.navigate(ModuleDemo.InteroperabilityApis.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "UI - Demo", onClick = {
+            navController.navigate(ModuleDemo.UiDemo.rout)
+        })
     }
 }
