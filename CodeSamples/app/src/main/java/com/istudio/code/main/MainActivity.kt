@@ -13,6 +13,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
+import com.istudio.code.modules.basic_layouts.BasicLayoutsDemo
+import com.istudio.code.modules.basic_layouts.modules.ColumnDemo
+import com.istudio.code.modules.basic_layouts.modules.RowsDemo
 import com.istudio.code.modules.interoperability_apis.InteroperabilityApisDemo
 import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
@@ -94,6 +97,18 @@ class MainActivity : ComponentActivity() {
                         // Toolbar menu drop down
                         composable(ModuleDemo.ToolbarMenuDropDown.rout) {
                             ToolbarMenuDropDownDemo(navController = navController)
+                        }
+                        // Basic Layouts
+                        composable(ModuleDemo.BasicLayouts.rout) {
+                            BasicLayoutsDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Rows Demo
+                        composable(ModuleDemo.RowsDemo.rout) {
+                            RowsDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Column Demo
+                        composable(ModuleDemo.ColumnDemo.rout) {
+                            ColumnDemo(navController = navController)
                         }
                     }
                 }

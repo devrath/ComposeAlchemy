@@ -14,4 +14,7 @@ sealed class ModuleDemo(val rout: String) {
     data object ViewsInCompose : ModuleDemo("ViewsInCompose")
     data object UiDemo : ModuleDemo("UiDemo")
     data object ToolbarMenuDropDown : ModuleDemo("ToolbarMenuDropDown")
+    data object BasicLayouts : ModuleDemo("BasicLayouts")
+    data object RowsDemo : ModuleDemo("RowsDemo")
+    data object ColumnDemo : ModuleDemo("ColumnDemo")
 }
