@@ -21,6 +21,9 @@
 
 </div>
 
+## `Approaches with XML and Compose`
+  * [`How we handle in code: Compose vs Xml`](https://github.com/devrath/ComposeAlchemy/wiki/How-we-handle-in-code:-Compose-vs-Xml)
+
 ## `Fundamentals of composing`
   * [`Introduction to Jetpack compose`](https://github.com/devrath/ComposeAlchemy/wiki/Introduction-to-Jetpack-compose#what-jetpack-compose-provides)
   * [`What are composables`](https://github.com/devrath/ComposeAlchemy/wiki/What-are-composables)
@@ -39,6 +42,9 @@
     * [`Material-3 Design kit and research`](https://github.com/devrath/Material-3-Design-Kit)
     * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
   * [`Displaying all previews of all screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-building-blocks:-Displaying-all-previews-of-all-screen-sizes)
+## `Basic layouts & responsiveness`
+  * [`Rows and Columns`](https://github.com/devrath/ComposeAlchemy/wiki/Rows-and-Columns) 
+ 
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
