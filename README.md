@@ -21,6 +21,9 @@
 
 </div>
 
+## `Approaches with XML and Compose`
+  * [`How we handle in code: Compose vs Xml`](https://github.com/devrath/ComposeAlchemy/wiki/How-we-handle-in-code:-Compose-vs-Xml)
+
 ## `Fundamentals of composing`
   * [`Introduction to Jetpack compose`](https://github.com/devrath/ComposeAlchemy/wiki/Introduction-to-Jetpack-compose#what-jetpack-compose-provides)
   * [`What are composables`](https://github.com/devrath/ComposeAlchemy/wiki/What-are-composables)
