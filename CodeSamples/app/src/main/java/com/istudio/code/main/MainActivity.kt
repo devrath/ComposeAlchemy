@@ -17,6 +17,7 @@ import com.istudio.code.modules.basic_layouts.BasicLayoutsDemo
 import com.istudio.code.modules.basic_layouts.modules.ColumnDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsSpacedByDemo
+import com.istudio.code.modules.basic_layouts.modules.RowsWeightsDemo
 import com.istudio.code.modules.interoperability_apis.InteroperabilityApisDemo
 import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
@@ -114,6 +115,10 @@ class MainActivity : ComponentActivity() {
                         // Basic Layouts --> Rows SpacedBy Demo
                         composable(ModuleDemo.RowsSpacedByDemo.rout) {
                             RowsSpacedByDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Rows Weights Demo
+                        composable(ModuleDemo.RowsWeightsDemo.rout) {
+                            RowsWeightsDemo(navController = navController)
                         }
                     }
                 }

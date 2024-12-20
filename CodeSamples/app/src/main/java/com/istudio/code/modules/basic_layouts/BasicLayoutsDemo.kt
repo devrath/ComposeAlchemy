@@ -36,6 +36,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.RowsSpacedByDemo.rout)
         })
 
+        AppButton(text = "Rows Weights Demo", onClick = {
+            navController.navigate(ModuleDemo.RowsSpacedByDemo.rout)
+        })
+
     }
 
 }
