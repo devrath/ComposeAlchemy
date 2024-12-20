@@ -26,6 +26,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.istudio.code.ui.theme.CodeTheme
+import com.istudio.code.utils.setWidthMode
 
 @Composable
 fun RowsDemo(navController: NavHostController) {
@@ -121,9 +122,6 @@ fun CurrentRowScreen(modifier: Modifier = Modifier) {
         }
     }
 }
-
-private fun Modifier.setWidthMode(isFullWidth: Boolean): Modifier =
-    if (isFullWidth) this.fillMaxWidth() else this.wrapContentWidth()
 
 @Preview(
     showBackground = true,
