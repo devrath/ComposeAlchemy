@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.ui.composables.AppButton
@@ -25,12 +24,16 @@ fun BasicLayoutsDemo(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
     ) {
 
-        AppButton(text = "Rows Demo", onClick = {
-            navController.navigate(ModuleDemo.RowsDemo.rout)
+        AppButton(text = "Rows Arrangement Demo", onClick = {
+            navController.navigate(ModuleDemo.RowsArrangementDemo.rout)
         })
 
-        AppButton(text = "Column Demo", onClick = {
-            navController.navigate(ModuleDemo.ColumnDemo.rout)
+        AppButton(text = "Column Arrangement Demo", onClick = {
+            navController.navigate(ModuleDemo.ColumnArrangementDemo.rout)
+        })
+
+        AppButton(text = "Rows Spaced By Demo", onClick = {
+            navController.navigate(ModuleDemo.RowsSpacedByDemo.rout)
         })
 
     }

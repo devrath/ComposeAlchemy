@@ -15,6 +15,7 @@ sealed class ModuleDemo(val rout: String) {
     data object UiDemo : ModuleDemo("UiDemo")
     data object ToolbarMenuDropDown : ModuleDemo("ToolbarMenuDropDown")
     data object BasicLayouts : ModuleDemo("BasicLayouts")
-    data object RowsDemo : ModuleDemo("RowsDemo")
-    data object ColumnDemo : ModuleDemo("ColumnDemo")
+    data object RowsArrangementDemo : ModuleDemo("RowsArrangementDemo")
+    data object ColumnArrangementDemo : ModuleDemo("ColumnArrangementDemo")
+    data object RowsSpacedByDemo : ModuleDemo("RowsSpacedByDemo")
 }

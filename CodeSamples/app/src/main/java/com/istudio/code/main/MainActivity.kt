@@ -16,6 +16,7 @@ import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.basic_layouts.BasicLayoutsDemo
 import com.istudio.code.modules.basic_layouts.modules.ColumnDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsDemo
+import com.istudio.code.modules.basic_layouts.modules.RowsSpacedByDemo
 import com.istudio.code.modules.interoperability_apis.InteroperabilityApisDemo
 import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
@@ -103,12 +104,16 @@ class MainActivity : ComponentActivity() {
                             BasicLayoutsDemo(navController = navController)
                         }
                         // Basic Layouts --> Rows Demo
-                        composable(ModuleDemo.RowsDemo.rout) {
+                        composable(ModuleDemo.RowsArrangementDemo.rout) {
                             RowsDemo(navController = navController)
                         }
                         // Basic Layouts --> Column Demo
-                        composable(ModuleDemo.ColumnDemo.rout) {
+                        composable(ModuleDemo.ColumnArrangementDemo.rout) {
                             ColumnDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Rows SpacedBy Demo
+                        composable(ModuleDemo.RowsSpacedByDemo.rout) {
+                            RowsSpacedByDemo(navController = navController)
                         }
                     }
                 }

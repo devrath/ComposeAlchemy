@@ -29,7 +29,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.istudio.code.ui.theme.CodeTheme
 import com.istudio.code.utils.setHeightMode
-import com.istudio.code.utils.setWidthMode
 
 @Composable
 fun ColumnDemo(navController: NavHostController) {
