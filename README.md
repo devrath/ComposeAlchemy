@@ -17,7 +17,12 @@
 
 | `𝙲𝙾𝙽𝚃𝙴𝙽𝚃𝚂` |
 | ---------- |
+| [`Approaches with XML and Compose`]() |
 | [`Fundamentals of composing`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#fundamentals-of-composing) |
+| [`Compose building blocks`]() |
+| [`Basic layouts & responsiveness`]() |
+| [`Compose Features`]() |
+| [`Interoperability API's`]() |
 
 </div>
 
