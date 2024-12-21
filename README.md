@@ -17,7 +17,12 @@
 
 | `𝙲𝙾𝙽𝚃𝙴𝙽𝚃𝚂` |
 | ---------- |
+| [`Approaches with XML and Compose`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#approaches-with-xml-and-compose) |
 | [`Fundamentals of composing`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#fundamentals-of-composing) |
+| [`Compose building blocks`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-building-blocks) |
+| [`Basic layouts & responsiveness`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#basic-layouts--responsiveness) |
+| [`Compose Features`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-features) |
+| [`Interoperability API's`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#interoperability-apis) |
 
 </div>
 
@@ -43,8 +48,8 @@
     * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
   * [`Displaying all previews of all screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-building-blocks:-Displaying-all-previews-of-all-screen-sizes)
 ## `Basic layouts & responsiveness`
-  * [`Rows and Columns`](https://github.com/devrath/ComposeAlchemy/wiki/Rows-and-Columns) 
- 
+  * [`Rows and Columns`](https://github.com/devrath/ComposeAlchemy/wiki/Rows-and-Columns)
+  * [`Box`](https://github.com/devrath/ComposeAlchemy/wiki/Box) 
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
