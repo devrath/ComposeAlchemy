@@ -40,6 +40,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.RowsSpacedByDemo.rout)
         })
 
+        AppButton(text = "Box Demo", onClick = {
+            navController.navigate(ModuleDemo.BoxDemo.rout)
+        })
+
     }
 
 }

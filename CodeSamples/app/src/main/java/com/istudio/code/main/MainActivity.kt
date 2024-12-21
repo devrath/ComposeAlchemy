@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.code.module_selection.ModuleDemo
 import com.istudio.code.module_selection.ModuleMainSelectionScreen
 import com.istudio.code.modules.basic_layouts.BasicLayoutsDemo
+import com.istudio.code.modules.basic_layouts.modules.BoxDemo
 import com.istudio.code.modules.basic_layouts.modules.ColumnDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsSpacedByDemo
@@ -119,6 +120,10 @@ class MainActivity : ComponentActivity() {
                         // Basic Layouts --> Rows Weights Demo
                         composable(ModuleDemo.RowsWeightsDemo.rout) {
                             RowsWeightsDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Box Demo
+                        composable(ModuleDemo.BoxDemo.rout) {
+                            BoxDemo(navController = navController)
                         }
                     }
                 }

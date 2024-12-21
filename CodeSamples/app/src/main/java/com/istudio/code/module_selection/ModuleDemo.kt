@@ -19,4 +19,5 @@ sealed class ModuleDemo(val rout: String) {
     data object ColumnArrangementDemo : ModuleDemo("ColumnArrangementDemo")
     data object RowsSpacedByDemo : ModuleDemo("RowsSpacedByDemo")
     data object RowsWeightsDemo : ModuleDemo("RowsWeightsDemo")
+    data object BoxDemo : ModuleDemo("BoxDemo")
 }
