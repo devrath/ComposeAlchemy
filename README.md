@@ -17,12 +17,12 @@
 
 | `𝙲𝙾𝙽𝚃𝙴𝙽𝚃𝚂` |
 | ---------- |
-| [`Approaches with XML and Compose`]() |
+| [`Approaches with XML and Compose`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#approaches-with-xml-and-compose) |
 | [`Fundamentals of composing`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#fundamentals-of-composing) |
-| [`Compose building blocks`]() |
-| [`Basic layouts & responsiveness`]() |
-| [`Compose Features`]() |
-| [`Interoperability API's`]() |
+| [`Compose building blocks`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-building-blocks) |
+| [`Basic layouts & responsiveness`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#basic-layouts--responsiveness) |
+| [`Compose Features`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-features) |
+| [`Interoperability API's`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#interoperability-apis) |
 
 </div>
 
