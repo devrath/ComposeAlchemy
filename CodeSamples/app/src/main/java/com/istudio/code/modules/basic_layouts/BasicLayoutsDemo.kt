@@ -44,6 +44,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.BoxDemo.rout)
         })
 
+        AppButton(text = "Flow Layout Demo", onClick = {
+            navController.navigate(ModuleDemo.FlowLayoutDemo.rout)
+        })
+
     }
 
 }
