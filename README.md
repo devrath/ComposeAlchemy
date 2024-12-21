@@ -49,7 +49,8 @@
   * [`Displaying all previews of all screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-building-blocks:-Displaying-all-previews-of-all-screen-sizes)
 ## `Basic layouts & responsiveness`
   * [`Rows and Columns`](https://github.com/devrath/ComposeAlchemy/wiki/Rows-and-Columns)
-  * [`Box`](https://github.com/devrath/ComposeAlchemy/wiki/Box) 
+  * [`Box`](https://github.com/devrath/ComposeAlchemy/wiki/Box)
+  * [`FlowLayout`](https://github.com/devrath/ComposeAlchemy/wiki/FlowLayout) 
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
