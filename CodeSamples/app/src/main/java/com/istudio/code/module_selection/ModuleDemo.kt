@@ -23,4 +23,5 @@ sealed class ModuleDemo(val rout: String) {
     data object FlowLayoutDemo : ModuleDemo("FlowLayoutDemo")
     data object LazyListDemo : ModuleDemo("LazyListDemo")
     data object ScaffoldDemo : ModuleDemo("ScaffoldDemo")
+    data object WindowSizeDemo : ModuleDemo("WindowSizeDemo")
 }

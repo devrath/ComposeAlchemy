@@ -56,6 +56,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.ScaffoldDemo.rout)
         })
 
+        AppButton(text = "Window Size Demo", onClick = {
+            navController.navigate(ModuleDemo.WindowSizeDemo.rout)
+        })
+
     }
 
 }
