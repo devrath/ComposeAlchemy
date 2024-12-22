@@ -45,7 +45,9 @@
     * [`Creating your own composition locals`](https://github.com/devrath/ComposeAlchemy/wiki/Composition-Local:-Creating-your-own-composition-locals)  
   * **`App Foundations`**
     * [`Material-3 Design kit and research`](https://github.com/devrath/Material-3-Design-Kit)
-    * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
+    * Window Screen Sizes
+      * [`Window Sizes Basic selection`](https://github.com/devrath/ComposeAlchemy/wiki/Window-Sizes-Basic-selection)
+      * [`Adaptability to different screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/WindowSize-Class-%E2%80%90-Adaptability-to-different-screen-sizes)
   * [`Displaying all previews of all screen sizes`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-building-blocks:-Displaying-all-previews-of-all-screen-sizes)
 ## `Basic layouts & responsiveness`
   * [`Rows and Columns`](https://github.com/devrath/ComposeAlchemy/wiki/Rows-and-Columns)
