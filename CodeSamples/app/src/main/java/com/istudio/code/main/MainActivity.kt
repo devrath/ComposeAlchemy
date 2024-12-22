@@ -33,6 +33,7 @@ import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.modules.state_basics.StateBasicsDemo
+import com.istudio.code.modules.state_basics.modules.StatesWithComposeDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithPrimitiveDemo
 import com.istudio.code.modules.ui_demos.UiDemo
 import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
@@ -154,6 +155,10 @@ class MainActivity : ComponentActivity() {
                         // State Basics --> Primitive variables as states
                         composable(ModuleDemo.PrimitiveVariableAsStateDemo.rout) {
                             StatesWithPrimitiveDemo(navController = navController)
+                        }
+                        // State Basics --> Compose state
+                        composable(ModuleDemo.StatesWithComposeDemo.rout) {
+                            StatesWithComposeDemo(navController = navController)
                         }
                     }
                 }

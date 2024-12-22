@@ -28,6 +28,10 @@ fun StateBasicsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.PrimitiveVariableAsStateDemo.rout)
         })
 
+        AppButton(text = "Compose state Demo", onClick = {
+            navController.navigate(ModuleDemo.StatesWithComposeDemo.rout)
+        })
+
     }
 
 }

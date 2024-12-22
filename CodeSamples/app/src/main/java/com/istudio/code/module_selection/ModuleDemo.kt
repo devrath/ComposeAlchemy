@@ -26,4 +26,5 @@ sealed class ModuleDemo(val rout: String) {
     data object WindowSizeDemo : ModuleDemo("WindowSizeDemo")
     data object StateBasics : ModuleDemo("StateBasics")
     data object PrimitiveVariableAsStateDemo : ModuleDemo("PrimitiveVariableAsStateDemo")
+    data object StatesWithComposeDemo : ModuleDemo("StatesWithComposeDemo")
 }
