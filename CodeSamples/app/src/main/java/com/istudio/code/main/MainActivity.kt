@@ -17,6 +17,7 @@ import com.istudio.code.modules.basic_layouts.BasicLayoutsDemo
 import com.istudio.code.modules.basic_layouts.modules.BoxDemo
 import com.istudio.code.modules.basic_layouts.modules.ColumnDemo
 import com.istudio.code.modules.basic_layouts.modules.FlowLayoutDemo
+import com.istudio.code.modules.basic_layouts.modules.LazyListDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsSpacedByDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsWeightsDemo
@@ -129,6 +130,10 @@ class MainActivity : ComponentActivity() {
                         // Basic Layouts --> Flow Layout Demo
                         composable(ModuleDemo.FlowLayoutDemo.rout) {
                             FlowLayoutDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Lazy List Demo
+                        composable(ModuleDemo.LazyListDemo.rout) {
+                            LazyListDemo(navController = navController)
                         }
                     }
                 }

@@ -48,6 +48,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.FlowLayoutDemo.rout)
         })
 
+        AppButton(text = "Lazy List Demo", onClick = {
+            navController.navigate(ModuleDemo.LazyListDemo.rout)
+        })
+
     }
 
 }
