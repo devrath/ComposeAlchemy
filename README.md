@@ -52,6 +52,7 @@
   * [`Box`](https://github.com/devrath/ComposeAlchemy/wiki/Box)
   * [`FlowLayout`](https://github.com/devrath/ComposeAlchemy/wiki/FlowLayout)
   * [`LazyList`](https://github.com/devrath/ComposeAlchemy/wiki/LazyColumn)
+  * [`Scaffold`](https://github.com/devrath/ComposeAlchemy/wiki/Scaffold)
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
