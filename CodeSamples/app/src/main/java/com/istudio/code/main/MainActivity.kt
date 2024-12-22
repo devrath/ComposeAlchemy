@@ -21,6 +21,7 @@ import com.istudio.code.modules.basic_layouts.modules.LazyListDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsSpacedByDemo
 import com.istudio.code.modules.basic_layouts.modules.RowsWeightsDemo
+import com.istudio.code.modules.basic_layouts.modules.ScaffoldDemo
 import com.istudio.code.modules.interoperability_apis.InteroperabilityApisDemo
 import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
@@ -134,6 +135,10 @@ class MainActivity : ComponentActivity() {
                         // Basic Layouts --> Lazy List Demo
                         composable(ModuleDemo.LazyListDemo.rout) {
                             LazyListDemo(navController = navController)
+                        }
+                        // Basic Layouts --> Scaffold Demo
+                        composable(ModuleDemo.ScaffoldDemo.rout) {
+                            ScaffoldDemo(navController = navController)
                         }
                     }
                 }

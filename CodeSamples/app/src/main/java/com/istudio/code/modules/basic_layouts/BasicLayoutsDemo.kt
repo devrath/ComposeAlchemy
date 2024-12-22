@@ -52,6 +52,10 @@ fun BasicLayoutsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.LazyListDemo.rout)
         })
 
+        AppButton(text = "Scaffold Demo", onClick = {
+            navController.navigate(ModuleDemo.ScaffoldDemo.rout)
+        })
+
     }
 
 }
