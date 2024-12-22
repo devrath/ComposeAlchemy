@@ -24,4 +24,6 @@ sealed class ModuleDemo(val rout: String) {
     data object LazyListDemo : ModuleDemo("LazyListDemo")
     data object ScaffoldDemo : ModuleDemo("ScaffoldDemo")
     data object WindowSizeDemo : ModuleDemo("WindowSizeDemo")
+    data object StateBasics : ModuleDemo("StateBasics")
+    data object PrimitiveVariableAsStateDemo : ModuleDemo("PrimitiveVariableAsStateDemo")
 }

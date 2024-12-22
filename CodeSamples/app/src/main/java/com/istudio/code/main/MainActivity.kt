@@ -32,6 +32,8 @@ import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
+import com.istudio.code.modules.state_basics.StateBasicsDemo
+import com.istudio.code.modules.state_basics.modules.StatesWithPrimitiveDemo
 import com.istudio.code.modules.ui_demos.UiDemo
 import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
 import com.istudio.code.ui.theme.CodeTheme
@@ -144,6 +146,14 @@ class MainActivity : ComponentActivity() {
                         // Basic Layouts --> WindowSize Demo
                         composable(ModuleDemo.WindowSizeDemo.rout) {
                             WindowSizeDemo(navController = navController)
+                        }
+                        // State Basics --> Selection
+                        composable(ModuleDemo.StateBasics.rout) {
+                            StateBasicsDemo(navController = navController)
+                        }
+                        // State Basics --> Primitive variables as states
+                        composable(ModuleDemo.PrimitiveVariableAsStateDemo.rout) {
+                            StatesWithPrimitiveDemo(navController = navController)
                         }
                     }
                 }

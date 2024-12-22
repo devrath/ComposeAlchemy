@@ -62,5 +62,11 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
         AppButton(text = "Basic Layouts", onClick = {
             navController.navigate(ModuleDemo.BasicLayouts.rout)
         })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "States Basics", onClick = {
+            navController.navigate(ModuleDemo.StateBasics.rout)
+        })
     }
 }
