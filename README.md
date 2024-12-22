@@ -21,6 +21,7 @@
 | [`Fundamentals of composing`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#fundamentals-of-composing) |
 | [`Compose building blocks`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-building-blocks) |
 | [`Basic layouts & responsiveness`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#basic-layouts--responsiveness) |
+| [`State Management`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#state-management) |
 | [`Compose Features`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-features) |
 | [`Interoperability API's`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#interoperability-apis) |
 
@@ -55,6 +56,9 @@
   * [`FlowLayout`](https://github.com/devrath/ComposeAlchemy/wiki/FlowLayout)
   * [`LazyList`](https://github.com/devrath/ComposeAlchemy/wiki/LazyColumn)
   * [`Scaffold`](https://github.com/devrath/ComposeAlchemy/wiki/Scaffold)
+## `State Management`
+  * [`Compose state basics`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-state-basics)
+
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
