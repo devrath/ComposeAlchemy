@@ -69,6 +69,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.ui:ui-viewbinding:1.7.6")
+    implementation("androidx.compose.material3.adaptive:adaptive-android:1.0.0")
+    implementation("androidx.compose.material3.adaptive:adaptive-desktop:1.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
