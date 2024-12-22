@@ -32,6 +32,10 @@ fun StateBasicsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.StatesWithComposeDemo.rout)
         })
 
+        AppButton(text = "State with SideEffect Demo", onClick = {
+            navController.navigate(ModuleDemo.StatesWithSideEffectDemo.rout)
+        })
+
     }
 
 }
