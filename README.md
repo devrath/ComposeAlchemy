@@ -58,6 +58,7 @@
   * [`Scaffold`](https://github.com/devrath/ComposeAlchemy/wiki/Scaffold)
 ## `State Management`
   * [`Compose state basics`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-state-basics)
+  * [`State hoisting & UDF`](https://github.com/devrath/ComposeAlchemy/wiki/State-Hoisting-&-UDF)
 
 ## `Compose Features`
   * **`Pagination`**
