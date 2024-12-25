@@ -36,6 +36,7 @@ import com.istudio.code.modules.state_basics.StateBasicsDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithComposeDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithPrimitiveDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithSideEffectDemo
+import com.istudio.code.modules.state_basics.modules.UpdatingContentOfStateDemo
 import com.istudio.code.modules.ui_demos.UiDemo
 import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
 import com.istudio.code.ui.theme.CodeTheme
@@ -164,6 +165,10 @@ class MainActivity : ComponentActivity() {
                         // State Basics --> State with side effect
                         composable(ModuleDemo.StatesWithSideEffectDemo.rout) {
                             StatesWithSideEffectDemo(navController = navController)
+                        }
+                        // State Basics --> State, Updating Content Of StateDemo
+                        composable(ModuleDemo.UpdatingContentOfStateDemo.rout) {
+                            UpdatingContentOfStateDemo(navController = navController)
                         }
                     }
                 }

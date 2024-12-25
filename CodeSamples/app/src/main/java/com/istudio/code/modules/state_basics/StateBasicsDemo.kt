@@ -36,6 +36,10 @@ fun StateBasicsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.StatesWithSideEffectDemo.rout)
         })
 
+        AppButton(text = "Updating content of state Demo", onClick = {
+            navController.navigate(ModuleDemo.UpdatingContentOfStateDemo.rout)
+        })
+
     }
 
 }
