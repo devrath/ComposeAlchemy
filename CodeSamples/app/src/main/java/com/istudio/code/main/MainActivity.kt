@@ -33,6 +33,7 @@ import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.modules.state_basics.StateBasicsDemo
+import com.istudio.code.modules.state_basics.modules.StatelessComposeDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithComposeDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithPrimitiveDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithSideEffectDemo
@@ -169,6 +170,10 @@ class MainActivity : ComponentActivity() {
                         // State Basics --> State, Updating Content Of StateDemo
                         composable(ModuleDemo.UpdatingContentOfStateDemo.rout) {
                             UpdatingContentOfStateDemo(navController = navController)
+                        }
+                        // State Basics --> Stateless Composable
+                        composable(ModuleDemo.StatelessComposeDemo.rout) {
+                            StatelessComposeDemo(navController = navController)
                         }
                     }
                 }

@@ -29,4 +29,5 @@ sealed class ModuleDemo(val rout: String) {
     data object StatesWithComposeDemo : ModuleDemo("StatesWithComposeDemo")
     data object StatesWithSideEffectDemo : ModuleDemo("StatesWithSideEffectDemo")
     data object UpdatingContentOfStateDemo : ModuleDemo("UpdatingContentOfStateDemo")
+    data object StatelessComposeDemo : ModuleDemo("StatelessComposeDemo")
 }

@@ -40,6 +40,10 @@ fun StateBasicsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.UpdatingContentOfStateDemo.rout)
         })
 
+        AppButton(text = "Stateless Composable Demo", onClick = {
+            navController.navigate(ModuleDemo.StatelessComposeDemo.rout)
+        })
+
     }
 
 }
