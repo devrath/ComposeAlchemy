@@ -38,6 +38,7 @@ import com.istudio.code.modules.state_basics.modules.StatesWithComposeDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithPrimitiveDemo
 import com.istudio.code.modules.state_basics.modules.StatesWithSideEffectDemo
 import com.istudio.code.modules.state_basics.modules.UpdatingContentOfStateDemo
+import com.istudio.code.modules.state_basics.modules.number_guess_demo.NumberGuessDemo
 import com.istudio.code.modules.ui_demos.UiDemo
 import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
 import com.istudio.code.ui.theme.CodeTheme
@@ -174,6 +175,10 @@ class MainActivity : ComponentActivity() {
                         // State Basics --> Stateless Composable
                         composable(ModuleDemo.StatelessComposeDemo.rout) {
                             StatelessComposeDemo(navController = navController)
+                        }
+                        // State Basics --> Number Guess Demo
+                        composable(ModuleDemo.NumberGuessDemo.rout) {
+                            NumberGuessDemo(navController = navController)
                         }
                     }
                 }

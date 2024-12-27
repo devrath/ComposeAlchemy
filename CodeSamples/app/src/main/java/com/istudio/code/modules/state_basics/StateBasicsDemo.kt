@@ -44,6 +44,10 @@ fun StateBasicsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.StatelessComposeDemo.rout)
         })
 
+        AppButton(text = "Number Guess Demo", onClick = {
+            navController.navigate(ModuleDemo.NumberGuessDemo.rout)
+        })
+
     }
 
 }
