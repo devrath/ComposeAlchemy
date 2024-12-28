@@ -28,6 +28,7 @@ import com.istudio.code.modules.interoperability_apis.modules.ViewsInComposeDemo
 import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.pagination.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
+import com.istudio.code.modules.side_effects.types.LaunchedEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
@@ -76,8 +77,12 @@ class MainActivity : ComponentActivity() {
                         composable(ModuleDemo.SideEffect.rout) {
                             TypeSideEffect(navController = navController)
                         }
-                        // Launched Effect
-                        composable(ModuleDemo.LaunchedEffect.rout) {
+                        // Launched Effect - Demo1
+                        composable(ModuleDemo.LaunchedEffectDemo1.rout) {
+                            TypeLaunchedEffect(navController = navController)
+                        }
+                        // Launched Effect - Demo2
+                        composable(ModuleDemo.LaunchedEffectDemo2.rout) {
                             TypeLaunchedEffect(navController = navController)
                         }
                         // Disposable Effect
@@ -179,6 +184,9 @@ class MainActivity : ComponentActivity() {
                         // State Basics --> Number Guess Demo
                         composable(ModuleDemo.NumberGuessDemo.rout) {
                             NumberGuessDemoRoute(navController = navController)
+                        }
+                        composable(ModuleDemo.LaunchedEffectDemo2.rout) {
+                            LaunchedEffectDemo2(navController = navController)
                         }
                     }
                 }
