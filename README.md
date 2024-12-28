@@ -61,7 +61,9 @@
   * [`Compose state basics`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-state-basics)
   * [`State hoisting & UDF`](https://github.com/devrath/ComposeAlchemy/wiki/State-Hoisting-&-UDF)
 ## `Side Effects & Effect Handlers`
-  
+  * [`What is a SideEffect in compose`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-a-SideEffect-in-compose)
+  * **Side effect handlers**
+    * [`What is LaunchedEffect`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-LaunchedEffect)
 
 ## `Compose Features`
   * **`Pagination`**
