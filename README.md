@@ -59,7 +59,6 @@
 ## `State Management`
   * [`Compose state basics`](https://github.com/devrath/ComposeAlchemy/wiki/Compose-state-basics)
   * [`State hoisting & UDF`](https://github.com/devrath/ComposeAlchemy/wiki/State-Hoisting-&-UDF)
-
 ## `Compose Features`
   * **`Pagination`**
     * [`Visualisation of how it works`](https://github.com/devrath/ComposeAlchemy/wiki/Pagination:-Visualisation-of-how-it-works)
