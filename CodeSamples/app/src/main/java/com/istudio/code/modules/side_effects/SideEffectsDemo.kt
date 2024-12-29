@@ -98,5 +98,11 @@ fun SideEffectsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.TypeRememberCoroutineScope.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Produce State", onClick = {
+            navController.navigate(ModuleDemo.TypeProduceState.rout)
+        })
+
     }
 }

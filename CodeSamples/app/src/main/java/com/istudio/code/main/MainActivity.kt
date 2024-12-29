@@ -32,6 +32,7 @@ import com.istudio.code.modules.side_effects.types.LaunchedEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
+import com.istudio.code.modules.side_effects.types.TypeProduceState
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
 import com.istudio.code.modules.state_basics.StateBasicsDemo
@@ -186,11 +187,17 @@ class MainActivity : ComponentActivity() {
                         composable(ModuleDemo.NumberGuessDemo.rout) {
                             NumberGuessDemoRoute(navController = navController)
                         }
+                        // Side Effect --> Launched Effect
                         composable(ModuleDemo.LaunchedEffectDemo2.rout) {
                             LaunchedEffectDemo2(navController = navController)
                         }
+                        // Side Effect --> Disposable Effect
                         composable(ModuleDemo.TypeDisposableEffectDemo2.rout) {
                             TypeDisposableEffectDemo2(navController = navController)
+                        }
+                        // Side Effect --> Produce State
+                        composable(ModuleDemo.TypeProduceState.rout) {
+                            TypeProduceState(navController = navController)
                         }
                     }
                 }
