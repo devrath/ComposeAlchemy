@@ -104,5 +104,11 @@ fun SideEffectsDemo(navController: NavHostController) {
             navController.navigate(ModuleDemo.TypeProduceState.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Derived State", onClick = {
+            navController.navigate(ModuleDemo.TypeDerivedState.rout)
+        })
+
     }
 }

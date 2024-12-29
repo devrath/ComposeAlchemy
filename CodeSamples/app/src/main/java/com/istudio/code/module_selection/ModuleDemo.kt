@@ -34,4 +34,5 @@ sealed class ModuleDemo(val rout: String) {
     data object StatelessComposeDemo : ModuleDemo("StatelessComposeDemo")
     data object NumberGuessDemo : ModuleDemo("NumberGuessDemo")
     data object TypeProduceState : ModuleDemo("TypeProduceState")
+    data object TypeDerivedState : ModuleDemo("TypeDerivedState")
 }

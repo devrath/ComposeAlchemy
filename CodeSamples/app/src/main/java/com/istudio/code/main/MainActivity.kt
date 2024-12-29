@@ -29,6 +29,7 @@ import com.istudio.code.modules.life_cycle.LifeCycleDemo
 import com.istudio.code.modules.pagination.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.LaunchedEffectDemo2
+import com.istudio.code.modules.side_effects.types.TypeDerivedState
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
@@ -199,6 +200,11 @@ class MainActivity : ComponentActivity() {
                         composable(ModuleDemo.TypeProduceState.rout) {
                             TypeProduceState(navController = navController)
                         }
+                        // Side Effect --> Derived State
+                        composable(ModuleDemo.TypeDerivedState.rout) {
+                            TypeDerivedState(navController = navController)
+                        }
+
                     }
                 }
             }
