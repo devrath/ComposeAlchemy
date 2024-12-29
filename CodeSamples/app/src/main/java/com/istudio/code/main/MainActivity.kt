@@ -30,6 +30,7 @@ import com.istudio.code.modules.pagination.QuotesDemo
 import com.istudio.code.modules.side_effects.SideEffectsDemo
 import com.istudio.code.modules.side_effects.types.LaunchedEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeDisposableEffect
+import com.istudio.code.modules.side_effects.types.TypeDisposableEffectDemo2
 import com.istudio.code.modules.side_effects.types.TypeLaunchedEffect
 import com.istudio.code.modules.side_effects.types.TypeRememberCoroutineScope
 import com.istudio.code.modules.side_effects.types.TypeSideEffect
@@ -86,7 +87,7 @@ class MainActivity : ComponentActivity() {
                             TypeLaunchedEffect(navController = navController)
                         }
                         // Disposable Effect
-                        composable(ModuleDemo.TypeDisposableEffect.rout) {
+                        composable(ModuleDemo.TypeDisposableEffectDemo1.rout) {
                             TypeDisposableEffect(navController = navController)
                         }
                         // Remember Coroutine Scope
@@ -187,6 +188,9 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(ModuleDemo.LaunchedEffectDemo2.rout) {
                             LaunchedEffectDemo2(navController = navController)
+                        }
+                        composable(ModuleDemo.TypeDisposableEffectDemo2.rout) {
+                            TypeDisposableEffectDemo2(navController = navController)
                         }
                     }
                 }

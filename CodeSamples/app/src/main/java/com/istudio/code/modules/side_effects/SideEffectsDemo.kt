@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -47,7 +46,7 @@ fun SideEffectsDemo(navController: NavHostController) {
 
             Text(text = "Launched Effect")
 
-            Spacer(modifier = Modifier.height(5.dp))
+            Spacer(modifier = Modifier.height(10.dp))
 
             Button(onClick = {
                 navController.navigate(ModuleDemo.LaunchedEffectDemo1.rout)
@@ -55,7 +54,7 @@ fun SideEffectsDemo(navController: NavHostController) {
                 Text("Demo-1")
             }
 
-            Spacer(modifier = Modifier.height(5.dp))
+            Spacer(modifier = Modifier.height(10.dp))
 
             Button(onClick = {
                 navController.navigate(ModuleDemo.LaunchedEffectDemo2.rout)
@@ -67,9 +66,31 @@ fun SideEffectsDemo(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Disposable Effect", onClick = {
-            navController.navigate(ModuleDemo.TypeDisposableEffect.rout)
-        })
+
+        Row(
+            horizontalArrangement = Arrangement.SpaceAround,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+
+            Text(text = "Disposable Effect")
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Button(onClick = {
+                navController.navigate(ModuleDemo.TypeDisposableEffectDemo1.rout)
+            }) {
+                Text("Demo-1")
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Button(onClick = {
+                navController.navigate(ModuleDemo.TypeDisposableEffectDemo2.rout)
+            }) {
+                Text("Demo-2")
+            }
+
+        }
 
         Spacer(modifier = Modifier.height(16.dp))
 
