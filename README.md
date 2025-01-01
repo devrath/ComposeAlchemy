@@ -24,7 +24,7 @@
 | [`State Management`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#state-management) |
 | [`Compose Features`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-features) |
 | [`Interoperability API's`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#interoperability-apis) |
-| [`Material3 Theming`]() |
+| [`Material3 Theming`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#material3-theming) |
 
 </div>
 
