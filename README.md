@@ -72,6 +72,7 @@
   * **`Using XML in Compose`**
     * [`Using VIEW-BINDING in the compose`](https://github.com/devrath/ComposeAlchemy/wiki/Interoperability:-Using-VIEW%E2%80%90BINDING-in-the-compose)
 ## `Material3 Theming`
+  * [`Theming the material - 3`](https://github.com/devrath/ComposeAlchemy/wiki/Material%E2%80%903-Theming)
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
