@@ -24,6 +24,7 @@
 | [`State Management`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#state-management) |
 | [`Compose Features`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#compose-features) |
 | [`Interoperability API's`](https://github.com/devrath/ComposeAlchemy/blob/main/README.md#interoperability-apis) |
+| [`Material3 Theming`]() |
 
 </div>
 
@@ -70,6 +71,7 @@
 ## `Interoperability API's`
   * **`Using XML in Compose`**
     * [`Using VIEW-BINDING in the compose`](https://github.com/devrath/ComposeAlchemy/wiki/Interoperability:-Using-VIEW%E2%80%90BINDING-in-the-compose)
+## `Material3 Theming`
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
