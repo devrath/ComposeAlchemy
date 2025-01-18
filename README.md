@@ -34,6 +34,7 @@
 ## `Fundamentals of composing`
   * [`Introduction to Jetpack compose`](https://github.com/devrath/ComposeAlchemy/wiki/Introduction-to-Jetpack-compose#what-jetpack-compose-provides)
   * [`What are composables`](https://github.com/devrath/ComposeAlchemy/wiki/What-are-composables)
+  * [`About Modifiers`](https://github.com/devrath/ComposeAlchemy/wiki/About-Modifiers)
   * **`State`**
     * [`What is a State`](https://github.com/devrath/ComposeAlchemy/wiki/What-is-a-State)
     * [`Stateful and Stateless composables`](https://github.com/devrath/ComposeAlchemy/wiki/Stateful-and-Stateless-composables)
