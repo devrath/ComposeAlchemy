@@ -1,5 +1,6 @@
 package com.istudio.code.main
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -45,6 +47,8 @@ import com.istudio.code.modules.state_basics.modules.UpdatingContentOfStateDemo
 import com.istudio.code.modules.state_basics.modules.number_guess_demo.NumberGuessDemoRoute
 import com.istudio.code.modules.ui_demos.UiDemo
 import com.istudio.code.modules.ui_demos.modules.ToolbarMenuDropDownDemo
+import com.istudio.code.modules.window_insets.InsetsDemoActivity
+import com.istudio.code.modules.window_insets.WindowInsetsDemo
 import com.istudio.code.ui.theme.CodeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -61,7 +65,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    val context = LocalContext.current
                     val navController = rememberNavController()
 
                     NavHost(
@@ -204,7 +208,10 @@ class MainActivity : ComponentActivity() {
                         composable(ModuleDemo.TypeDerivedState.rout) {
                             TypeDerivedState(navController = navController)
                         }
-
+                        // Window Insets Selection
+                        composable(ModuleDemo.WindowInsetsSelection.rout) {
+                            context.startActivity(Intent(context, InsetsDemoActivity::class.java))
+                        }
                     }
                 }
             }

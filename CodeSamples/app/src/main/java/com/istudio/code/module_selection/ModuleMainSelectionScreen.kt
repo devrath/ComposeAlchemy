@@ -14,6 +14,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.istudio.code.modules.app_foundations.AppFoundationsActivity
+import com.istudio.code.modules.window_insets.InsetsDemoActivity
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
@@ -67,6 +68,12 @@ fun ModuleMainSelectionScreen(navController: NavHostController) {
 
         AppButton(text = "States Basics", onClick = {
             navController.navigate(ModuleDemo.StateBasics.rout)
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Window Insets", onClick = {
+            context.startActivity(Intent(context, InsetsDemoActivity::class.java))
         })
     }
 }
